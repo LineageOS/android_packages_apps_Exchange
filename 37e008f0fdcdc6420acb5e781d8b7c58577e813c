@@ -70,6 +70,24 @@
       "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_2957c903",
+        "filename": "src/com/android/exchange/provider/ExchangeDirectoryProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 8703
+      },
+      "writtenOn": "2014-01-21T05:02:07Z",
+      "side": 1,
+      "message": "OK. I\u0027m building to make sure it doesn\u0027t break anything and then I\u0027ll fix that too",
+      "parentUuid": "5a5ae5dd_694dc171",
+      "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
