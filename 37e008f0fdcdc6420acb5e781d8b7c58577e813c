@@ -16,6 +16,24 @@
       "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_892b5d82",
+        "filename": "src/com/android/exchange/provider/ExchangeDirectoryProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-21T04:49:13Z",
+      "side": 1,
+      "message": "indeed",
+      "parentUuid": "5a5ae5dd_0911ad52",
+      "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
