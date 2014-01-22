@@ -124,6 +124,24 @@
       "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_271714ef",
+        "filename": "src/com/android/exchange/provider/ExchangeDirectoryProvider.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-01-22T11:56:08Z",
+      "side": 1,
+      "message": "Yeah, but...\n\nI suggest to upload this pacth to Aosp, add Yu Ping Hu as reviewer. he will respond shortly (at least he did for my last Exchange patches) and wait for his response.",
+      "parentUuid": "3a57f1b5_47f9f0c7",
+      "revId": "37e008f0fdcdc6420acb5e781d8b7c58577e813c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
