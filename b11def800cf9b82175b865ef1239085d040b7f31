@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_cb4b6e2a",
+        "filename": "src/com/android/exchange/adapter/EmailSyncAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 246,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-09T20:21:45Z",
+      "side": 1,
+      "message": "As in EasSyncMail.java.",
+      "revId": "b11def800cf9b82175b865ef1239085d040b7f31",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_6b469a24",
+        "filename": "src/com/android/exchange/eas/EasSyncMail.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-09T20:21:45Z",
+      "side": 1,
+      "message": "int sizeLimit \u003d account.getSyncSize();\nif (sizeLimit !\u003d SyncSize.SYNC_SIZE_ENTIRE_MAIL) {\n    s.data(Tags.BASE_TRUNCATION_SIZE, String.valueOf(sizeLimit));\n} else {\n    s.data(Tags.BASE_TRUNCATION_SIZE, Eas.EAS12_TRUNCATION_SIZE);\n}\n\n\nAlso nuke the ENTIRE_EMAIL_SYNC_SIZE string constant.",
+      "revId": "b11def800cf9b82175b865ef1239085d040b7f31",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
