@@ -42,7 +42,7 @@ LOCAL_OVERRIDES_PACKAGES := Exchange
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_SDK_VERSION := 19
 
-LOCAL_EMMA_COVERAGE_FILTER += +com.android.exchange.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER += com.android.exchange.*
 
 include $(BUILD_PACKAGE)
 
