@@ -89,12 +89,20 @@
   <!-- In account setup options & account settings screens (exchange), sync window length; this
         implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_1day">Un día</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_3days">Trés díes</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_1week">Una selmana</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_2weeks">Dos selmanes</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_1month">Un mes</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+  <string name="account_setup_options_mail_window_all">Too</string>
   <!-- Title for notification warning about an authentication error [CHAR LIMIT=40]  -->
+  <string name="auth_error_notification_title">Fallu d\'autenticación</string>
   <!-- text for notification warning about an authentication error [CHAR LIMIT=60]  -->
+  <string name="auth_error_notification_text">Toca pa editar los axustes de <xliff:g id="account">%s</xliff:g></string>
   <!-- Message displayed when there is no application to handle the settings option. [CHAR LIMIT=NONE] -->
 </resources>
