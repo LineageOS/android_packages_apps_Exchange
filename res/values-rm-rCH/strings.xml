@@ -24,67 +24,28 @@
   <!-- Message subject for meeting accepted response. This will be followed
         by a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
-  <string name="meeting_accepted">
-        Derbyniwyd:
-        <xliff:g id="subject">%s</xliff:g>
-    </string>
   <!-- Message subject for meeting declined response. This is followed by
         a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
-  <string name="meeting_declined">
-        Gwrthodwyd:
-        <xliff:g id="subject">%s</xliff:g>
-    </string>
   <!-- Message subject for meeting tentative response. This is followed by
         a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
   <!-- Message subject for a canceled meeting email. This is followed by a
         colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
-  <string name="meeting_canceled">
-        Canslwyd:
-        <xliff:g id="subject">%s</xliff:g>
-    </string>
   <!-- Message subject for an updated meeting email. This is followed by a
         colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
-  <string name="meeting_updated">
-        Diweddarwyd:
-        <xliff:g id="subject">%s</xliff:g>
-    </string>
   <!-- Indicate when a meeting takes place. This is presented in in bullet
         form, as in, "When: xxx" followed by "Where: xxx" -->
-  <string name="meeting_when">
-        Pa bryd:
-        <xliff:g id="when">%s</xliff:g>
-    </string>
   <!-- Indicate where a meeting takes place. This is presented in in bullet
         form, as in, "When: xxx" followed by "Where: xxx" -->
-  <string name="meeting_where">
-        Pa le:
-        <xliff:g id="where">%s</xliff:g>
-    </string>
   <!-- Indicate that a meeting is recurring. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 at 2:30pm (recurring)" -->
-  <string name="meeting_recurring">
-        Pa bryd:
-        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
-        (yn ail-adrodd)
-    </string>
   <!-- Indicate that a meeting lasts all day. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day)" -->
-  <string name="meeting_allday">
-        Pa bryd:
-        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
-        (trwy\'r dydd)
-    </string>
   <!-- Indicate that a meeting lasts all day and is recurring. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day, recurring)" -->
-  <string name="meeting_allday_recurring">
-        Pa bryd:
-        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
-        (trwy\'r dydd, yn ail-adrodd)
-    </string>
   <!-- The name of this APK as shown in manage applications settings. [CHAR LIMIT=30] -->
   <!-- Used as the body text of a message reporting to an attendee that a
         specific instance of a recurring meeting has been canceled -->
@@ -95,34 +56,22 @@
   <!-- A policy in which the device may not have a storage card [CHAR LIMIT=50] -->
   <!-- A policy in which the device may not have unsigned applications installed
         [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_unsigned_apps">Peidio â chaniatáu apiau heb eu llofnodi</string>
   <!-- A policy in which the device may not allow application installation via an unsigned
         installer [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_unsigned_installers">Peidio â chaniatáu gosodwyr apiau heb eu llofnodi</string>
   <!-- A policy in which the device may not allow wifi communications [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_wifi">Peidio â chaniatáu Wi-Fi</string>
   <!-- A policy in which the device may not allow text messaging [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_text_messaging">Peidio â chaniatáu negeseuon testun</string>
   <!-- A policy in which the device may not allow POP3 or IMAP email accounts [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_pop_imap">Peidio â chaniatáu cyfrifon POP3 neu IMAP</string>
   <!-- A policy in which the device may allow infrared communications [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_irda">Peidio â chaniatáu cyfathrebiadau isgoch</string>
   <!-- A policy in which the device may allow HTML email to be received [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_html">Peidio â chaniatáu ebost HTML</string>
   <!-- A policy in which the device may not allow the user of web browsers [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_browser">Peidio â chaniatáu porwyr</string>
   <!-- A policy in which the device may not allow the receipt of consumer email
         [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_consumer_email">Peidio â chaniatáu ebost defnyddwyr</string>
   <!-- A policy in which the device may not allow internet connection sharing
         [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_internet_sharing">Peidio â chaniatáu rhannu\'r rhyngrwyd</string>
   <!-- A policy in which messages must be in SMIME format [CHAR LIMIT=50] -->
   <!-- A policy in which the device's bluetooth capabilities are restricted [CHAR LIMIT=50] -->
   <!-- A policy in which the device blocks specified applications [CHAR LIMIT=50]-->
-  <string name="policy_app_blacklist">Peidio â chaniatáu apiau penodol</string>
   <!-- A policy in which the device allows only specified applications [CHAR LIMIT=50] -->
-  <string name="policy_app_whitelist">Caniatáu apiau penodol yn unig</string>
   <!-- A policy in which the device limits the amount of text that can be displayed for a
         given message [CHAR LIMIT=50] -->
   <!-- A policy in which the device limits the amount of HTML text that can be displayed for a
@@ -131,27 +80,19 @@
   <!-- The following are a list of policies that the user's server requires and that are
          in force.  We will list them separated by commas, as required -->
   <!-- A policy in which attachments aren't allowed to be downloaded [CHAR LIMIT=50] -->
-  <string name="policy_dont_allow_attachments">Peidio â chaniatáu atodiadau</string>
   <!-- A policy in which the device restricts the size of attachments that can be downloaded
         [CHAR LIMIT=50] -->
-  <string name="policy_max_attachment_size">Cyfyngu maint atodiadau</string>
   <!-- A policy in which the device may only sync manually while roaming [CHAR LIMIT=50] -->
   <!-- The following is a policy that may or not be supported on a particular device -->
   <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
   <!--  The window length strings below MUST remain in sync with those in com.android.email -->
   <!-- In account setup options & account settings screens (exchange), sync window length; this
         implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
-  <string name="account_setup_options_mail_window_auto">Awtomatig</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
-  <string name="account_setup_options_mail_window_1day">Un diwrnod</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
-  <string name="account_setup_options_mail_window_3days">Tridiau</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
-  <string name="account_setup_options_mail_window_1week">Un wythnos</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
-  <string name="account_setup_options_mail_window_2weeks">Pythefnos</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
-  <string name="account_setup_options_mail_window_1month">Un mis</string>
   <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
   <!-- Title for notification warning about an authentication error [CHAR LIMIT=40]  -->
   <!-- text for notification warning about an authentication error [CHAR LIMIT=60]  -->
