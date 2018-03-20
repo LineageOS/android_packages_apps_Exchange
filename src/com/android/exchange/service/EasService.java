@@ -30,13 +30,11 @@ import android.provider.CalendarContract;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
 
-import com.android.emailcommon.Logging;
 import com.android.emailcommon.TempDirectory;
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent;
 import com.android.emailcommon.provider.HostAuth;
 import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.EmailContent.Message;
 import com.android.emailcommon.service.EmailServiceProxy;
 import com.android.emailcommon.service.EmailServiceStatus;
 import com.android.emailcommon.service.EmailServiceVersion;
@@ -50,7 +48,6 @@ import com.android.exchange.eas.EasAutoDiscover;
 import com.android.exchange.eas.EasFolderSync;
 import com.android.exchange.eas.EasFullSyncOperation;
 import com.android.exchange.eas.EasLoadAttachment;
-import com.android.exchange.eas.EasLoadMore;
 import com.android.exchange.eas.EasOperation;
 import com.android.exchange.eas.EasPing;
 import com.android.exchange.eas.EasSearch;
@@ -111,25 +108,6 @@ public class EasService extends Service {
                         attachmentId, callback);
                 doOperation(operation, "IEmailService.loadAttachment");
             }
-        }
-
-        @Override
-        public void loadMore(long messageId) {
-            LogUtils.d(TAG, "IEmailService.loadMore for message: %d", messageId);
-            Message msg = Message.restoreMessageWithId(EasService.this, messageId);
-            if (msg == null) {
-                LogUtils.e(Logging.LOG_TAG, "Retrive msg faild, messageId:" + messageId);
-                return;
-            }
-
-            Account account = Account.restoreAccountWithId(EasService.this, msg.mAccountKey);
-            if (account == null) {
-                LogUtils.e(Logging.LOG_TAG, "Retrive account faild, accountId:" + msg.mAccountKey);
-                return;
-            }
-
-            final EasLoadMore operation = new EasLoadMore(EasService.this, account, msg);
-            doOperation(operation, "IEmailService.loadMore");
         }
 
         @Override
@@ -225,12 +203,6 @@ public class EasService extends Service {
                 Bundle result = autoDiscoverInternal(uri, attempt, username, password, true);
                 int resultCode = result.getInt(EmailServiceProxy.AUTO_DISCOVER_BUNDLE_ERROR_CODE);
                 if (resultCode != EasAutoDiscover.RESULT_BAD_RESPONSE) {
-                    // To fix autodiscover setup we need to fill the bundle with the appropriate
-                    // MessagingException to code, which can be interpreted by our Email app.
-                    // We leave untouched the original extra so it can be used by Gmail and other
-                    // email clients.
-                    result.putInt(EmailServiceProxy.AUTO_DISCOVER_BUNDLE_MESSAGING_ERROR_CODE,
-                            EasAutoDiscover.translateToMessagingException(resultCode));
                     return result;
                 } else {
                     LogUtils.d(TAG, "got BAD_RESPONSE");
@@ -249,8 +221,7 @@ public class EasService extends Service {
                 // Try again recursively with the new uri. TODO we should limit the number of redirects.
                 final String redirectUri = op.getRedirectUri();
                 return autoDiscoverInternal(redirectUri, attempt, username, password, canRetry);
-            } else if (result == EasAutoDiscover.RESULT_SC_UNAUTHORIZED ||
-                    result == EasAutoDiscover.RESULT_AUTHENTICATION_ERROR) {
+            } else if (result == EasAutoDiscover.RESULT_SC_UNAUTHORIZED) {
                 if (canRetry && username.contains("@")) {
                     // Try again using the bare user name
                     final int atSignIndex = username.indexOf('@');
@@ -263,7 +234,7 @@ public class EasService extends Service {
                     // to begin with. Either way, failure.
                     final Bundle bundle = new Bundle(1);
                     bundle.putInt(EmailServiceProxy.AUTO_DISCOVER_BUNDLE_ERROR_CODE,
-                            EasAutoDiscover.RESULT_SC_UNAUTHORIZED);
+                            EasAutoDiscover.RESULT_OTHER_FAILURE);
                     return bundle;
                 }
             } else if (result != EasAutoDiscover.RESULT_OK) {
@@ -462,7 +433,7 @@ public class EasService extends Service {
         }
 
         // Check if account is configured for a push sync interval.
-        if (account.getSyncInterval() != Account.CHECK_INTERVAL_PUSH) {
+        if (account.mSyncInterval != Account.CHECK_INTERVAL_PUSH) {
             LogUtils.d(TAG, "Do not ping: Account %d not configured for push", account.mId);
             return false;
         }
