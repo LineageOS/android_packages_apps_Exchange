@@ -21,6 +21,7 @@
   <!-- Do Not Translate. Unused string. -->
   <!-- Short name of Microsoft Exchange account type; used by AccountManager -->
   <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
+  <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
   <!-- Message subject for meeting accepted response. This will be followed
         by a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
@@ -47,6 +48,7 @@
   <!-- Indicate that a meeting lasts all day and is recurring. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day, recurring)" -->
   <!-- The name of this APK as shown in manage applications settings. [CHAR LIMIT=30] -->
+  <string name="app_name">Servicios d\'Exchange</string>
   <!-- Used as the body text of a message reporting to an attendee that a
         specific instance of a recurring meeting has been canceled -->
   <!-- Used as the body text of a message reporting to an attendee that a
