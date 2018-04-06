@@ -143,6 +143,8 @@ public abstract class EasOperation {
     /** Error code indicating that this operation failed, but we should not abort the sync */
     /** TODO: This is currently only used in EasOutboxSync, no other place handles it correctly */
     public static final int RESULT_NON_FATAL_ERROR = -12;
+    /** Error code indicating we lack required permissions */
+    public static final int RESULT_NO_PERMISSIONS = -13;
     /** Error code indicating some other failure. */
     public static final int RESULT_OTHER_FAILURE = -99;
     /** Constant to delimit where op specific error codes begin. */
@@ -204,6 +206,10 @@ public abstract class EasOperation {
         return true;
     }
 
+    public boolean hasRequiredPermissions() {
+        return true;
+    }
+
     public final long getAccountId() {
         return mAccount.getId();
     }
@@ -259,6 +265,9 @@ public abstract class EasOperation {
             LogUtils.i(LOG_TAG, "Failed to initialize %d before sending request for operation %s",
                     getAccountId(), getCommand());
             return RESULT_INITIALIZATION_FAILURE;
+        }
+        if (!hasRequiredPermissions()) {
+            return RESULT_NO_PERMISSIONS;
         }
         try {
             return performOperationInternal();

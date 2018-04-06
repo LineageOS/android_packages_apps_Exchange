@@ -42,6 +42,11 @@ public class ContactsSyncAdapterService extends AbstractSyncAdapterService {
     private static final String ACCOUNT_AND_TYPE_CONTACTS =
         MailboxColumns.ACCOUNT_KEY + "=? AND " + MailboxColumns.TYPE + '=' + Mailbox.TYPE_CONTACTS;
 
+    private static final String[] NEEDED_PERMISSIONS = {
+        android.Manifest.permission.READ_CONTACTS,
+        android.Manifest.permission.WRITE_CONTACTS
+    };
+
     private static final Object sSyncAdapterLock = new Object();
     private static AbstractThreadedSyncAdapter sSyncAdapter = null;
 
@@ -85,6 +90,10 @@ public class ContactsSyncAdapterService extends AbstractSyncAdapterService {
                 // the account being removed from our database.
                 LogUtils.w(TAG,
                         "onPerformSync() - Could not find an Account, skipping contacts sync.");
+                return;
+            }
+
+            if (!requestPermissions(NEEDED_PERMISSIONS)) {
                 return;
             }
 
