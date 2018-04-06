@@ -26,8 +26,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SyncResult;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.Messenger;
 import android.os.IBinder;
 import android.text.format.DateUtils;
 
@@ -36,6 +41,7 @@ import com.android.emailcommon.provider.EmailContent;
 import com.android.emailcommon.service.EmailServiceStatus;
 import com.android.emailcommon.service.IEmailService;
 import com.android.emailcommon.utility.IntentUtilities;
+import com.android.exchange.PermissionRequestActivity;
 import com.android.exchange.R;
 import com.android.mail.utils.LogUtils;
 
@@ -136,6 +142,30 @@ public abstract class AbstractSyncAdapterService extends Service {
         final NotificationManager nm = (NotificationManager)
                 this.getSystemService(Context.NOTIFICATION_SERVICE);
         nm.notify("AuthError", 0, notification);
+    }
+
+    protected boolean requestPermissions(String[] permissions) {
+        Looper.prepare();
+
+        boolean[] result = new boolean[1];
+
+        Handler handler = new Handler(Looper.myLooper()) {
+            @Override
+            public void handleMessage(Message msg) {
+                int[] grantResults = (int[]) msg.obj;
+                result[0] = true;
+                for (int i = 0; i < grantResults.length; i++) {
+                    result[0] &= grantResults[i] == PackageManager.PERMISSION_GRANTED;
+                }
+                getLooper().quitSafely();
+            }
+        };
+        Messenger messenger = new Messenger(handler);
+
+        startActivity(PermissionRequestActivity.createIntent(this, permissions, messenger));
+        Looper.loop();
+
+        return result[0];
     }
 
     /**
