@@ -32,6 +32,8 @@ LOCAL_AAPT_FLAGS += --extra-packages com.android.emailcommon
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, build/src)
 
+LOCAL_JAVA_LIBRARIES := org.apache.http.legacy
+
 LOCAL_STATIC_JAVA_LIBRARIES := android-common com.android.emailcommon
 LOCAL_STATIC_JAVA_LIBRARIES += calendar-common
 LOCAL_STATIC_JAVA_LIBRARIES += android-support-v4
@@ -40,7 +42,6 @@ LOCAL_PACKAGE_NAME := Exchange2
 LOCAL_OVERRIDES_PACKAGES := Exchange
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-LOCAL_SDK_VERSION := 19
 
 LOCAL_JACK_COVERAGE_INCLUDE_FILTER += com.android.exchange.*
 
