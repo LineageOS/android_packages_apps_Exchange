@@ -11,6 +11,7 @@ import com.android.emailcommon.provider.Mailbox;
 import com.android.exchange.CommandStatusException;
 import com.android.exchange.Eas;
 import com.android.exchange.EasResponse;
+import com.android.exchange.eas.EasOperation;
 import com.android.exchange.adapter.AbstractSyncParser;
 import com.android.exchange.adapter.Parser;
 import com.android.exchange.adapter.Serializer;
@@ -77,6 +78,14 @@ public class EasSyncBase extends EasOperation {
     }
 
     @Override
+    public boolean hasRequiredPermissions() {
+        if (mCollectionTypeHandler != null && !mCollectionTypeHandler.hasRequiredPermissions(mContext)) {
+            return false;
+        }
+        return super.hasRequiredPermissions();
+    }
+
+    @Override
     protected HttpEntity getRequestEntity() throws IOException {
         final String className = Eas.getFolderClass(mMailbox.mType);
         final String syncKey = getSyncKey();
@@ -103,6 +112,10 @@ public class EasSyncBase extends EasOperation {
     @Override
     protected int handleResponse(final EasResponse response)
             throws IOException, CommandStatusException {
+        if (!hasRequiredPermissions()) {
+            LogUtils.i(TAG, "No permissions in handleResponse");
+            return EasOperation.RESULT_NO_PERMISSIONS;
+        }
         try {
             final AbstractSyncParser parser = mCollectionTypeHandler.getParser(mContext, mAccount,
                     mMailbox, response.getInputStream());

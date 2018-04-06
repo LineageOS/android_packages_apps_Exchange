@@ -42,6 +42,11 @@ public class CalendarSyncAdapterService extends AbstractSyncAdapterService {
     private static final String DIRTY_IN_ACCOUNT =
         Events.DIRTY + "=1 AND " + Events.ACCOUNT_NAME + "=?";
 
+    private static final String[] NEEDED_PERMISSIONS = {
+        android.Manifest.permission.READ_CALENDAR,
+        android.Manifest.permission.WRITE_CALENDAR
+    };
+
     private static final Object sSyncAdapterLock = new Object();
     private static AbstractThreadedSyncAdapter sSyncAdapter = null;
 
@@ -85,6 +90,10 @@ public class CalendarSyncAdapterService extends AbstractSyncAdapterService {
                 // the account being removed from our database.
                 LogUtils.w(TAG,
                         "onPerformSync() - Could not find an Account, skipping calendar sync.");
+                return;
+            }
+
+            if (!requestPermissions(NEEDED_PERMISSIONS)) {
                 return;
             }
 

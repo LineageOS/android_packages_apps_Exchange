@@ -44,7 +44,7 @@ import com.android.mail.utils.LogUtils;
  * This class covers the boilerplate for using an {@link AbstractThreadedSyncAdapter}. Subclasses
  * should just implement their sync adapter, and override {@link #getSyncAdapter}.
  */
-public abstract class AbstractSyncAdapterService extends Service {
+public abstract class AbstractSyncAdapterService extends AbstractPermissionService {
     private static final String TAG = LogUtils.TAG;
 
     // The call to ServiceConnection.onServiceConnected is asynchronous to bindService. It's

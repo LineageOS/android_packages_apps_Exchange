@@ -20,6 +20,7 @@ import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.SyncResult;
 import android.net.Uri;
 import android.os.Build;
@@ -108,6 +109,10 @@ public abstract class EasOperation {
     /** Message MIME type for EAS version 14 and later. */
     private static final String EAS_14_MIME_TYPE = "application/vnd.ms-sync.wbxml";
 
+    private static final String[] NEEDED_PERMISSIONS = {
+        android.Manifest.permission.READ_PHONE_STATE
+    };
+
     /**
      * EasOperation error codes below.  All subclasses should try to create error codes
      * that do not overlap these codes or the codes of other subclasses. The error
@@ -143,6 +148,8 @@ public abstract class EasOperation {
     /** Error code indicating that this operation failed, but we should not abort the sync */
     /** TODO: This is currently only used in EasOutboxSync, no other place handles it correctly */
     public static final int RESULT_NON_FATAL_ERROR = -12;
+    /** Error code indicating we lack required permissions */
+    public static final int RESULT_NO_PERMISSIONS = -13;
     /** Error code indicating some other failure. */
     public static final int RESULT_OTHER_FAILURE = -99;
     /** Constant to delimit where op specific error codes begin. */
@@ -204,6 +211,10 @@ public abstract class EasOperation {
         return true;
     }
 
+    public boolean hasRequiredPermissions() {
+        return hasPermissions(NEEDED_PERMISSIONS);
+    }
+
     public final long getAccountId() {
         return mAccount.getId();
     }
@@ -259,6 +270,10 @@ public abstract class EasOperation {
             LogUtils.i(LOG_TAG, "Failed to initialize %d before sending request for operation %s",
                     getAccountId(), getCommand());
             return RESULT_INITIALIZATION_FAILURE;
+        }
+        if (!hasRequiredPermissions()) {
+            LogUtils.i(LOG_TAG, "No permissions in performOperation");
+            return RESULT_NO_PERMISSIONS;
         }
         try {
             return performOperationInternal();
@@ -742,5 +757,14 @@ public abstract class EasOperation {
                 return UIProvider.LastSyncResult.INTERNAL_ERROR;
         }
         return UIProvider.LastSyncResult.SUCCESS;
+    }
+
+    protected boolean hasPermissions(String[] permissions) {
+        for (String permission : permissions) {
+            if (mContext.checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
     }
 }
