@@ -139,6 +139,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".PermissionRequestActivity"
+                  android:theme="@android:style/Theme.NoDisplay" />
         <activity android:name=".SettingsRedirector">
             <intent-filter>
                 <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
