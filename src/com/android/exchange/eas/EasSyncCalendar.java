@@ -1,5 +1,6 @@
 package com.android.exchange.eas;
 
+import android.Manifest;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -54,6 +55,11 @@ public class EasSyncCalendar extends EasSyncCollectionTypeBase {
 
     // TODO: Some constants are copied from CalendarSyncAdapter and are still used by the parser.
     // These values need to stay in sync; when the parser is cleaned up, be sure to unify them.
+
+    private static final String[] NEEDED_PERMISSIONS = {
+        Manifest.permission.READ_CALENDAR,
+        Manifest.permission.WRITE_CALENDAR
+    };
 
     private static final int PIM_WINDOW_SIZE_CALENDAR = 10;
 
@@ -185,6 +191,11 @@ public class EasSyncCalendar extends EasSyncCollectionTypeBase {
                 c.close();
             }
         }
+    }
+
+    @Override
+    public boolean hasRequiredPermissions(final Context context) {
+        return hasPermissions(context, NEEDED_PERMISSIONS);
     }
 
     @Override

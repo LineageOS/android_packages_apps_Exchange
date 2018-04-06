@@ -77,6 +77,14 @@ public class EasSyncBase extends EasOperation {
     }
 
     @Override
+    public boolean hasRequiredPermissions() {
+        if (mCollectionTypeHandler != null && !mCollectionTypeHandler.hasRequiredPermissions(mContext)) {
+            return false;
+        }
+        return super.hasRequiredPermissions();
+    }
+
+    @Override
     protected HttpEntity getRequestEntity() throws IOException {
         final String className = Eas.getFolderClass(mMailbox.mType);
         final String syncKey = getSyncKey();
