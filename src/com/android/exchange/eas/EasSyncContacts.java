@@ -1,5 +1,6 @@
 package com.android.exchange.eas;
 
+import android.Manifest;
 import android.content.ContentProviderOperation;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -7,6 +8,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Entity;
 import android.content.EntityIterator;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -32,6 +34,7 @@ import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.Mailbox;
 import com.android.emailcommon.utility.Utility;
 import com.android.exchange.Eas;
+import com.android.exchange.PermissionRequestActivity;
 import com.android.exchange.adapter.AbstractSyncParser;
 import com.android.exchange.adapter.ContactsSyncParser;
 import com.android.exchange.adapter.Serializer;
@@ -55,6 +58,8 @@ import java.util.TimeZone;
  */
 public class EasSyncContacts extends EasSyncCollectionTypeBase {
     private static final String TAG = Eas.LOG_TAG;
+
+    private static final int PERMISSION_REQUEST_CODE = 2;
 
     public static final int PIM_WINDOW_SIZE_CONTACTS = 10;
 
@@ -153,9 +158,20 @@ public class EasSyncContacts extends EasSyncCollectionTypeBase {
         public static final String ACCOUNT_NAME = "data8";
     }
 
-    public EasSyncContacts(final String emailAddress) {
+    public EasSyncContacts(final Context context, final String emailAddress) {
+        requestPermissions(context);
         mAccountManagerAccount = new android.accounts.Account(emailAddress,
                 Eas.EXCHANGE_ACCOUNT_MANAGER_TYPE);
+    }
+
+    private void requestPermissions(Context context) {
+        Intent permissionIntent = new Intent(context, PermissionRequestActivity.class);
+        permissionIntent.putExtra("permissions", new String[]{Manifest.permission.READ_CONTACTS,
+                Manifest.permission.WRITE_CONTACTS});
+        permissionIntent.putExtra("requestCode", PERMISSION_REQUEST_CODE);
+        permissionIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        context.startActivity(permissionIntent);
     }
 
     @Override

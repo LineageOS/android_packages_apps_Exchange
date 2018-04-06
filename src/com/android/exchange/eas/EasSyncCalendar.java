@@ -1,11 +1,13 @@
 package com.android.exchange.eas;
 
+import android.Manifest;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Entity;
 import android.content.EntityIterator;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.net.Uri;
@@ -29,6 +31,7 @@ import com.android.emailcommon.provider.EmailContent.Message;
 import com.android.emailcommon.provider.Mailbox;
 import com.android.emailcommon.utility.Utility;
 import com.android.exchange.Eas;
+import com.android.exchange.PermissionRequestActivity;
 import com.android.exchange.R;
 import com.android.exchange.adapter.AbstractSyncParser;
 import com.android.exchange.adapter.CalendarSyncParser;
@@ -51,6 +54,8 @@ import java.util.UUID;
  */
 public class EasSyncCalendar extends EasSyncCollectionTypeBase {
     private static final String TAG = Eas.LOG_TAG;
+
+    private static final int PERMISSION_REQUEST_CODE = 1;
 
     // TODO: Some constants are copied from CalendarSyncAdapter and are still used by the parser.
     // These values need to stay in sync; when the parser is cleaned up, be sure to unify them.
@@ -128,6 +133,7 @@ public class EasSyncCalendar extends EasSyncCollectionTypeBase {
     public EasSyncCalendar(final Context context, final Account account,
             final Mailbox mailbox) {
         super();
+        requestPermissions(context);
         mAndroidAccount = new android.accounts.Account(account.mEmailAddress,
             Eas.EXCHANGE_ACCOUNT_MANAGER_TYPE);
         final ContentResolver cr = context.getContentResolver();
@@ -185,6 +191,16 @@ public class EasSyncCalendar extends EasSyncCollectionTypeBase {
                 c.close();
             }
         }
+    }
+
+    private void requestPermissions(Context context) {
+        Intent permissionIntent = new Intent(context, PermissionRequestActivity.class);
+        permissionIntent.putExtra("permissions", new String[]{Manifest.permission.READ_CALENDAR,
+                Manifest.permission.WRITE_CALENDAR});
+        permissionIntent.putExtra("requestCode", PERMISSION_REQUEST_CODE);
+        permissionIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+        context.startActivity(permissionIntent);
     }
 
     @Override

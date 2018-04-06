@@ -167,7 +167,7 @@ public class EasSyncBase extends EasOperation {
                 return new EasSyncCalendar(mContext, mAccount, mMailbox);
             }
             case Mailbox.TYPE_CONTACTS:
-                return new EasSyncContacts(mAccount.mEmailAddress);
+                return new EasSyncContacts(mContext, mAccount.mEmailAddress);
             default:
                 LogUtils.e(LOG_TAG, "unexpected collectiontype %d", type);
                 return null;
