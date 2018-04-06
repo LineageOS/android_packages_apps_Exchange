@@ -67,7 +67,7 @@ import java.util.Set;
  * from the sync adapters; sync adapters should make blocking calls on this service to actually
  * perform any operations.
  */
-public class EasService extends Service {
+public class EasService extends AbstractPermissionService {
 
     private static final String TAG = Eas.LOG_TAG;
 
@@ -91,6 +91,10 @@ public class EasService extends Service {
 
     private static boolean sProtocolLogging;
     private static boolean sFileLogging;
+
+    private static final String[] NEEDED_PERMISSIONS = {
+        android.Manifest.permission.READ_PHONE_STATE
+    };
 
     /**
      * Implementation of the IEmailService interface.
@@ -134,6 +138,9 @@ public class EasService extends Service {
                 final int result = doOperation(op, "IEmailService.sync");
                 if (result == EasFullSyncOperation.RESULT_SECURITY_HOLD) {
                     LogUtils.i(LogUtils.TAG, "Security Hold trying to sync");
+                    return EmailServiceStatus.INTERNAL_ERROR;
+                } else if (result == EasFullSyncOperation.RESULT_NO_PERMISSIONS) {
+                    LogUtils.i(LogUtils.TAG, "No permissions in sync");
                     return EmailServiceStatus.INTERNAL_ERROR;
                 }
                 return convertToEmailServiceStatus(result);
@@ -408,6 +415,14 @@ public class EasService extends Service {
 
     public int doOperation(final EasOperation operation, final String loggingName) {
         LogUtils.d(TAG, "%s: %d", loggingName, operation.getAccountId());
+
+        // Basic permissions are needed for all sync operations
+        // because in EasOperation IMEI and phone number are queried
+        if (!requestPermissions(NEEDED_PERMISSIONS)) {
+            LogUtils.i(LogUtils.TAG, "No permissions in doOperation");
+            return EasOperation.RESULT_NO_PERMISSIONS;
+        }
+
         mSynchronizer.syncStart(operation.getAccountId());
         int result = EasOperation.RESULT_MIN_OK_RESULT;
         // TODO: Do we need a wakelock here? For RPC coming from sync adapters, no -- the SA

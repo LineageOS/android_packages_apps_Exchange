@@ -1,6 +1,7 @@
 package com.android.exchange.eas;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.Mailbox;
@@ -67,6 +68,10 @@ public abstract class EasSyncCollectionTypeBase {
      */
     public void cleanup(final Context context, final Account account) {}
 
+    public boolean hasRequiredPermissions(final Context context) {
+        return true;
+    }
+
     /**
      * Shared non-initial sync options for PIM (contacts & calendar) objects.
      *
@@ -97,5 +102,14 @@ public abstract class EasSyncCollectionTypeBase {
             s.data(Tags.SYNC_TRUNCATION, Eas.EAS2_5_TRUNCATION_SIZE);
         }
         s.end();
+    }
+
+    protected static boolean hasPermissions(Context context, String[] permissions) {
+        for (String permission : permissions) {
+            if (context.checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
     }
 }
