@@ -1,5 +1,6 @@
 package com.android.exchange.eas;
 
+import android.Manifest;
 import android.content.ContentProviderOperation;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -55,6 +56,11 @@ import java.util.TimeZone;
  */
 public class EasSyncContacts extends EasSyncCollectionTypeBase {
     private static final String TAG = Eas.LOG_TAG;
+
+    private static final String[] NEEDED_PERMISSIONS = {
+        Manifest.permission.READ_CONTACTS,
+        Manifest.permission.WRITE_CONTACTS
+    };
 
     public static final int PIM_WINDOW_SIZE_CONTACTS = 10;
 
@@ -156,6 +162,11 @@ public class EasSyncContacts extends EasSyncCollectionTypeBase {
     public EasSyncContacts(final String emailAddress) {
         mAccountManagerAccount = new android.accounts.Account(emailAddress,
                 Eas.EXCHANGE_ACCOUNT_MANAGER_TYPE);
+    }
+
+    @Override
+    public boolean hasRequiredPermissions(final Context context) {
+        return hasPermissions(context, NEEDED_PERMISSIONS);
     }
 
     @Override
