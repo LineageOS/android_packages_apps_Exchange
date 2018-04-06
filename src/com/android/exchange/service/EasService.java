@@ -135,6 +135,9 @@ public class EasService extends Service {
                 if (result == EasFullSyncOperation.RESULT_SECURITY_HOLD) {
                     LogUtils.i(LogUtils.TAG, "Security Hold trying to sync");
                     return EmailServiceStatus.INTERNAL_ERROR;
+                } else if (result == EasFullSyncOperation.RESULT_NO_PERMISSIONS) {
+                    LogUtils.i(LogUtils.TAG, "No permissions trying to sync");
+                    return EmailServiceStatus.INTERNAL_ERROR;
                 }
                 return convertToEmailServiceStatus(result);
             } else {
