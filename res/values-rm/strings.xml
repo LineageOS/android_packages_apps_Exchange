@@ -29,7 +29,6 @@
     <skip />
     <!-- no translation found for meeting_allday_recurring (2320264182781062684) -->
     <skip />
-    <string name="notification_exchange_calendar_added" msgid="6823659622379350159">"Agiuntà in chalender Exchange"</string>
     <!-- no translation found for app_name (5316597712787122829) -->
     <skip />
     <string name="exception_cancel" msgid="6160117429428313805">"Questa occurrenza è vegnida annullada: <xliff:g id="DATE">%s</xliff:g>"</string>
