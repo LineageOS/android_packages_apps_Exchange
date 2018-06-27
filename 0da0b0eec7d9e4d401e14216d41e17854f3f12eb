@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06bdcb9d_38eff8f9",
+        "filename": "src/com/android/exchange/PermissionRequestActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-06-27T08:03:39Z",
+      "side": 1,
+      "message": "The request code seems useless here, because you don\u0027t communicate anything back to the original caller. Instead of having the requestCode extra, I\u0027d suggest to use a Messenger [1] extra instead and use that one to call back into the caller if permission was granted here.\n\nBTW, should probably also have a static intent factory here:\n\npublic static Intent createIntent(Context context, String[] permissions, Messenger messenger) {\n    return new Intent(context, PermissionRequestActivity.class)\n            .putExtra(...);\n}\n\n[1] https://developer.android.com/reference/android/os/Messenger",
+      "revId": "0da0b0eec7d9e4d401e14216d41e17854f3f12eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
