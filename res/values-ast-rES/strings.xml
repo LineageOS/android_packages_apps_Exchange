@@ -25,26 +25,59 @@
   <!-- Message subject for meeting accepted response. This will be followed
         by a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+  <string name="meeting_accepted">
+        Aceutóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
   <!-- Message subject for meeting declined response. This is followed by
         a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+  <string name="meeting_declined">
+        Refugóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
   <!-- Message subject for meeting tentative response. This is followed by
         a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+  <string name="meeting_tentative">
+        Provisional:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
   <!-- Message subject for a canceled meeting email. This is followed by a
         colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+  <string name="meeting_canceled">
+        Encaboxóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
   <!-- Message subject for an updated meeting email. This is followed by a
         colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+  <string name="meeting_updated">
+        Anovóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
   <!-- Indicate when a meeting takes place. This is presented in in bullet
         form, as in, "When: xxx" followed by "Where: xxx" -->
+  <string name="meeting_when">
+        Cuándo:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
   <!-- Indicate where a meeting takes place. This is presented in in bullet
         form, as in, "When: xxx" followed by "Where: xxx" -->
+  <string name="meeting_where">
+        Ónde:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
   <!-- Indicate that a meeting is recurring. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 at 2:30pm (recurring)" -->
   <!-- Indicate that a meeting lasts all day. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day)" -->
+  <string name="meeting_allday">
+        Cuándo:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (tol día)
+    </string>
   <!-- Indicate that a meeting lasts all day and is recurring. This would normally be presented
         after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day, recurring)" -->
   <!-- The name of this APK as shown in manage applications settings. [CHAR LIMIT=30] -->

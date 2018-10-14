@@ -125,6 +125,7 @@
   <string name="policy_app_whitelist">Caniatáu apiau penodol yn unig</string>
   <!-- A policy in which the device limits the amount of text that can be displayed for a
         given message [CHAR LIMIT=50] -->
+  <string name="policy_text_truncation">Cyfyngu maint testun e-bost</string>
   <!-- A policy in which the device limits the amount of HTML text that can be displayed for a
         given message [CHAR LIMIT=50] -->
   <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
