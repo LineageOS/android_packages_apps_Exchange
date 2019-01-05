@@ -21,6 +21,7 @@
     <!-- Do Not Translate. Unused string. -->
     <!-- Short name of Microsoft Exchange account type; used by AccountManager -->
     <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
+    <string name="exchange_name_alternate">ActiveSync Microsoft Exchange</string>
     <!-- Message subject for meeting accepted response. This will be followed
         by a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
@@ -36,6 +37,9 @@
     <!-- Message subject for meeting tentative response. This is followed by
         a colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
+    <string name="meeting_tentative">        Posib:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
     <!-- Message subject for a canceled meeting email. This is followed by a
         colon and the title of the meeting (i.e. the title of the meeting becomes
         part of the subject of the message that's sent) -->
@@ -77,13 +81,23 @@
         (trwy\'r dydd, yn ail-adrodd)
     </string>
     <!-- The name of this APK as shown in manage applications settings. [CHAR LIMIT=30] -->
+    <string name="app_name">Gwasanaethau Cyfnewid</string>
     <!-- Used as the body text of a message reporting to an attendee that a
         specific instance of a recurring meeting has been canceled -->
+    <string name="exception_cancel">        Mae\'r digwyddiad hwn wedi’i
+        ganslo ar gyfer:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
     <!-- Used as the body text of a message reporting to an attendee that a
         specific instance of a recurring meeting has been changed -->
+    <string name="exception_updated">        Mae manylion y digwyddiad hwn wedi\'u
+        newid ar gyfer:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
     <!-- The following are a list of policies that the user's server might require, but that can't
         be enforced by our device.  We will list them separated by commas, as required -->
     <!-- A policy in which the device may not have a storage card [CHAR LIMIT=50] -->
+    <string name="policy_dont_allow_storage_cards">Peidio â chaniatáu cardiau storfa</string>
     <!-- A policy in which the device may not have unsigned applications installed
         [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_unsigned_apps">Peidio â chaniatáu apiau heb eu llofnodi</string>
@@ -109,16 +123,21 @@
         [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_internet_sharing">Peidio â chaniatáu rhannu\'r rhyngrwyd</string>
     <!-- A policy in which messages must be in SMIME format [CHAR LIMIT=50] -->
+    <string name="policy_require_smime">Mynnu cael negeseuon SMIME</string>
     <!-- A policy in which the device's bluetooth capabilities are restricted [CHAR LIMIT=50] -->
+    <string name="policy_bluetooth_restricted">Cyfyngu ar ddefnydd Bluetooth</string>
     <!-- A policy in which the device blocks specified applications [CHAR LIMIT=50]-->
     <string name="policy_app_blacklist">Peidio â chaniatáu apiau penodol</string>
     <!-- A policy in which the device allows only specified applications [CHAR LIMIT=50] -->
     <string name="policy_app_whitelist">Caniatáu apiau penodol yn unig</string>
     <!-- A policy in which the device limits the amount of text that can be displayed for a
         given message [CHAR LIMIT=50] -->
+    <string name="policy_text_truncation">Cyfyngu ar hyd negeseuon ebost</string>
     <!-- A policy in which the device limits the amount of HTML text that can be displayed for a
         given message [CHAR LIMIT=50] -->
+    <string name="policy_html_truncation">Cyfyngu ar maint negeseuon ebost HTML</string>
     <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
+    <string name="policy_require_sd_encryption">Mynnu bod cardiau SD wedi\'u hamgryptio</string>
     <!-- The following are a list of policies that the user's server requires and that are
          in force.  We will list them separated by commas, as required -->
     <!-- A policy in which attachments aren't allowed to be downloaded [CHAR LIMIT=50] -->
@@ -127,8 +146,10 @@
         [CHAR LIMIT=50] -->
     <string name="policy_max_attachment_size">Cyfyngu maint atodiadau</string>
     <!-- A policy in which the device may only sync manually while roaming [CHAR LIMIT=50] -->
+    <string name="policy_require_manual_sync_roaming">Caniatáu cysoni â llaw yn unig wrth grwydro</string>
     <!-- The following is a policy that may or not be supported on a particular device -->
     <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
+    <string name="policy_require_encryption">Mynnu bod y ddyfais wedi\'u hamgryptio</string>
     <!--  The window length strings below MUST remain in sync with those in com.android.email -->
     <!-- In account setup options & account settings screens (exchange), sync window length; this
         implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
@@ -144,7 +165,11 @@
     <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_1month">Un mis</string>
     <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <string name="account_setup_options_mail_window_all">Y cwbl</string>
     <!-- Title for notification warning about an authentication error [CHAR LIMIT=40]  -->
+    <string name="auth_error_notification_title">Gwall dilysu</string>
     <!-- text for notification warning about an authentication error [CHAR LIMIT=60]  -->
+    <string name="auth_error_notification_text">Cyffyrdda i olygu gosodiadau\'r cyfrif ar gyfer <xliff:g id="account">%s</xliff:g></string>
     <!-- Message displayed when there is no application to handle the settings option. [CHAR LIMIT=NONE] -->
+    <string name="email_settings_not_available">Rhaid ail-alluogi\'r ap Ebost er mwyn gweld y gosodiadau.</string>
 </resources>
