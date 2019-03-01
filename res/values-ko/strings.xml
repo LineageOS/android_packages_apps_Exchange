@@ -15,132 +15,50 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Deprecated strings - Move the identifiers to this section, mark as
-        DO NOT TRANSLATE, and remove the actual text. These will be removed in a
-        bulk operation. -->
-    <!-- Do Not Translate. Unused string. -->
-    <!-- Short name of Microsoft Exchange account type; used by AccountManager -->
-    <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
     <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
-    <!-- Message subject for meeting accepted response. This will be followed
-        by a colon and the title of the meeting (i.e. the title of the meeting becomes
-        part of the subject of the message that's sent) -->
     <string name="meeting_accepted">수락: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <!-- Message subject for meeting declined response. This is followed by
-        a colon and the title of the meeting (i.e. the title of the meeting becomes
-        part of the subject of the message that's sent) -->
     <string name="meeting_declined">거부: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <!-- Message subject for meeting tentative response. This is followed by
-        a colon and the title of the meeting (i.e. the title of the meeting becomes
-        part of the subject of the message that's sent) -->
     <string name="meeting_tentative">미정: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <!-- Message subject for a canceled meeting email. This is followed by a
-        colon and the title of the meeting (i.e. the title of the meeting becomes
-        part of the subject of the message that's sent) -->
     <string name="meeting_canceled">취소: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <!-- Message subject for an updated meeting email. This is followed by a
-        colon and the title of the meeting (i.e. the title of the meeting becomes
-        part of the subject of the message that's sent) -->
     <string name="meeting_updated">업데이트: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <!-- Indicate when a meeting takes place. This is presented in in bullet
-        form, as in, "When: xxx" followed by "Where: xxx" -->
     <string name="meeting_when">일시: <xliff:g id="WHEN">%s</xliff:g></string>
-    <!-- Indicate where a meeting takes place. This is presented in in bullet
-        form, as in, "When: xxx" followed by "Where: xxx" -->
     <string name="meeting_where">장소: <xliff:g id="WHERE">%s</xliff:g></string>
-    <!-- Indicate that a meeting is recurring. This would normally be presented
-        after "When: xxx", e.g. "When: Tue, Mar 10, 2010 at 2:30pm (recurring)" -->
     <string name="meeting_recurring">일시: <xliff:g id="EVENTDATE">%s</xliff:g>(반복 일정)</string>
-    <!-- Indicate that a meeting lasts all day. This would normally be presented
-        after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day)" -->
     <string name="meeting_allday">일시: <xliff:g id="EVENTDATE">%s</xliff:g>(종일)</string>
-    <!-- Indicate that a meeting lasts all day and is recurring. This would normally be presented
-        after "When: xxx", e.g. "When: Tue, Mar 10, 2010 (all day, recurring)" -->
     <string name="meeting_allday_recurring">일시: <xliff:g id="EVENTDATE">%s</xliff:g>(종일, 반복)</string>
-    <!-- The name of this APK as shown in manage applications settings. [CHAR LIMIT=30] -->
     <string name="app_name">Exchange 서비스</string>
-    <!-- Used as the body text of a message reporting to an attendee that a
-        specific instance of a recurring meeting has been canceled -->
     <string name="exception_cancel"><xliff:g id="DATE">%s</xliff:g>에 있을 이 일정이 취소되었습니다.</string>
-    <!-- Used as the body text of a message reporting to an attendee that a
-        specific instance of a recurring meeting has been changed -->
     <string name="exception_updated"><xliff:g id="DATE">%s</xliff:g>에 있을 이 일정의 세부사항이 변경되었습니다.</string>
-    <!-- The following are a list of policies that the user's server might require, but that can't
-        be enforced by our device.  We will list them separated by commas, as required -->
-    <!-- A policy in which the device may not have a storage card [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_storage_cards">저장 카드 허용 안함</string>
-    <!-- A policy in which the device may not have unsigned applications installed
-        [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_unsigned_apps">서명되지 않은 앱 허용 안함</string>
-    <!-- A policy in which the device may not allow application installation via an unsigned
-        installer [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_unsigned_installers">서명되지 않은 앱 설치 프로그램 허용 안함</string>
-    <!-- A policy in which the device may not allow wifi communications [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_wifi">Wi-Fi 허용 안함</string>
-    <!-- A policy in which the device may not allow text messaging [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_text_messaging">문자 메시지 허용 안함</string>
-    <!-- A policy in which the device may not allow POP3 or IMAP email accounts [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_pop_imap">POP3 또는 IMAP 계정 허용 안함</string>
-    <!-- A policy in which the device may allow infrared communications [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_irda">적외선 통신 허용 안함</string>
-    <!-- A policy in which the device may allow HTML email to be received [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_html">HTML 이메일 허용 안함</string>
-    <!-- A policy in which the device may not allow the user of web browsers [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_browser">브라우저 허용 안함</string>
-    <!-- A policy in which the device may not allow the receipt of consumer email
-        [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_consumer_email">소비자 이메일 허용 안함</string>
-    <!-- A policy in which the device may not allow internet connection sharing
-        [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_internet_sharing">인터넷 공유 허용 안함</string>
-    <!-- A policy in which messages must be in SMIME format [CHAR LIMIT=50] -->
     <string name="policy_require_smime">SMIME 메시지 필요</string>
-    <!-- A policy in which the device's bluetooth capabilities are restricted [CHAR LIMIT=50] -->
     <string name="policy_bluetooth_restricted">블루투스 사용 제한</string>
-    <!-- A policy in which the device blocks specified applications [CHAR LIMIT=50]-->
     <string name="policy_app_blacklist">지정된 앱 허용 안함</string>
-    <!-- A policy in which the device allows only specified applications [CHAR LIMIT=50] -->
     <string name="policy_app_whitelist">지정한 앱만 허용</string>
-    <!-- A policy in which the device limits the amount of text that can be displayed for a
-        given message [CHAR LIMIT=50] -->
     <string name="policy_text_truncation">텍스트 이메일 크기 제한</string>
-    <!-- A policy in which the device limits the amount of HTML text that can be displayed for a
-        given message [CHAR LIMIT=50] -->
     <string name="policy_html_truncation">HTML 이메일 크기 제한</string>
-    <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
     <string name="policy_require_sd_encryption">SD 카드 암호화 필요</string>
-    <!-- The following are a list of policies that the user's server requires and that are
-         in force.  We will list them separated by commas, as required -->
-    <!-- A policy in which attachments aren't allowed to be downloaded [CHAR LIMIT=50] -->
     <string name="policy_dont_allow_attachments">첨부 파일 허용 안함</string>
-    <!-- A policy in which the device restricts the size of attachments that can be downloaded
-        [CHAR LIMIT=50] -->
     <string name="policy_max_attachment_size">첨부 파일 크기 제한</string>
-    <!-- A policy in which the device may only sync manually while roaming [CHAR LIMIT=50] -->
     <string name="policy_require_manual_sync_roaming">로밍 중에 수동 동기화만 허용</string>
-    <!-- The following is a policy that may or not be supported on a particular device -->
-    <!-- A policy in which the device requires device or sd card encryption [CHAR LIMIT=50] -->
     <string name="policy_require_encryption">기기 암호화 필요</string>
-    <!--  The window length strings below MUST remain in sync with those in com.android.email -->
-    <!-- In account setup options & account settings screens (exchange), sync window length; this
-        implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
     <string name="account_setup_options_mail_window_auto">자동</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_1day">하루</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_3days">3일</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_1week">1주</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_2weeks">2주</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_1month">1달</string>
-    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
     <string name="account_setup_options_mail_window_all">전체</string>
-    <!-- Title for notification warning about an authentication error [CHAR LIMIT=40]  -->
     <string name="auth_error_notification_title">인증 오류</string>
-    <!-- text for notification warning about an authentication error [CHAR LIMIT=60]  -->
     <string name="auth_error_notification_text"><xliff:g id="ACCOUNT">%s</xliff:g> 계정 설정을 수정하려면 터치하세요.</string>
-    <!-- Message displayed when there is no application to handle the settings option. [CHAR LIMIT=NONE] -->
     <string name="email_settings_not_available">설정을 보려면 이메일 애플리케이션을 다시 사용 설정하세요.</string>
 </resources>
