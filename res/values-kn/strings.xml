@@ -29,28 +29,28 @@
     <string name="app_name">ವಿನಿಮಯ ಸೇವೆಗಳು</string>
     <string name="exception_cancel">ಈ ದಿನಾಂಕದಲ್ಲಿ ಈ ಈವೆಂಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: <xliff:g id="DATE">%s</xliff:g></string>
     <string name="exception_updated">ಈ ಈವೆಂಟ್‍‍ನ ವಿವರಗಳನ್ನು ಈ ದಿನಾಂಕದಲ್ಲಿ ಬದಲಿಸಲಾಗಿದೆ:<xliff:g id="DATE">%s</xliff:g></string>
-    <string name="policy_dont_allow_storage_cards">ಸಂಗ್ರಹಣಾ ಕಾರ್ಡ್ ಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_unsigned_apps">ಸೈನ್ ಮಾಡಿರದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_unsigned_installers">ಸೈನ್ ಮಾಡಿರದ ಅಪ್ಲಿಕೇಶನ್ ಸ್ಥಾಪಕಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_wifi">Wi-Fi ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_text_messaging">ಪಠ್ಯ ಸಂದೇಶಿಸುವಿಕೆಯನ್ನು ಅನುಮತಿಸಬೇಡ</string>
-    <string name="policy_dont_allow_pop_imap">POP3 ಅಥವಾ IMAP ಖಾತೆಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_irda">ಇನ್‌ಫ್ರಾರೆಡ್ ಸಂವಹನಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_html">HTML ಇಮೇಲ್ ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_browser">ಬ್ರೌಸರ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡ</string>
-    <string name="policy_dont_allow_consumer_email">ಗ್ರಾಹಕ ಇಮೇಲ್ ಅನುಮತಿಸಬೇಡಿ</string>
-    <string name="policy_dont_allow_internet_sharing">ಇಂಟರ್ನೆಟ್ ಹಂಚಿಕೆ ಅನುಮತಿಸಬೇಡಿ</string>
+    <string name="policy_dont_allow_storage_cards">ಮೆಮೊರಿ ಕಾರ್ಡ್ಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_unsigned_apps">ಸಹಿಮಾಡದ ಅಪ್ಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_unsigned_installers">ಸಹಿಮಾಡದ ಅಪ್ ಸ್ಥಾಪಕಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_wifi">Wi-Fi ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_text_messaging">ಪಠ್ಯ ಸಂದೇಶ ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_pop_imap">POP3 ಅಥವಾ IMAP ಖಾತೆಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_irda">ಅತಿಗೆಂಪು ಸಂವಾರ್ತೆಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_html">HTML e-ಅಂಚೆ ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_browser">ಬ್ರೌಸರ್‍ಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_consumer_email">ಗ್ರಾಹಕ e-ಅಂಚೆ ನಿರಾಕರಿಸು</string>
+    <string name="policy_dont_allow_internet_sharing">ಅಂತರ್ಜಾಲ ಹಂಚಿಕೆ ನಿರಾಕರಿಸು</string>
     <string name="policy_require_smime">SMIME ಸಂದೇಶಗಳ ಅಗತ್ಯವಿದೆ</string>
-    <string name="policy_bluetooth_restricted">Bluetooth ಬಳಕೆಯನ್ನು ನಿರ್ಬಂಧಿಸಿ</string>
-    <string name="policy_app_blacklist">ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡ</string>
+    <string name="policy_bluetooth_restricted">ಬ್ಲೂಟೂತ್ ಬಳಕೆಯನ್ನು ನಿರ್ಬಂಧಿಸು</string>
+    <string name="policy_app_blacklist">ನಿರ್ದಿಷ್ಟ ಅಪ್ಲಗಳನ್ನು ನಿರಾಕರಿಸು</string>
     <string name="policy_app_whitelist">ನಿರ್ದಿಷ್ಟ ಪಡಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸಿ</string>
-    <string name="policy_text_truncation">ಪಠ್ಯ ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ</string>
-    <string name="policy_html_truncation">HTML ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ</string>
-    <string name="policy_require_sd_encryption">SD ಕಾರ್ಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್‌‌ ಅಗತ್ಯವಿದೆ</string>
-    <string name="policy_dont_allow_attachments">ಲಗತ್ತುಗಳನ್ನು ಅನುಮತಿಸಬೇಡ</string>
-    <string name="policy_max_attachment_size">ಲಗತ್ತು ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ</string>
+    <string name="policy_text_truncation">ಪಠ್ಯ e-ಅಂಚೆ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸು</string>
+    <string name="policy_html_truncation">HTML ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸು</string>
+    <string name="policy_require_sd_encryption">SD ಕಾರ್ಡ್ನ ಗುಪ್ತಲಿಪೀಕರಣ ಅಗತ್ಯವಿದೆ</string>
+    <string name="policy_dont_allow_attachments">ಲಗತ್ತುಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="policy_max_attachment_size">ಲಗತ್ತು ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸು</string>
     <string name="policy_require_manual_sync_roaming">ರೋಮಿಂಗ್‍ನಲ್ಲಿರುವಾಗ ಹಸ್ತಚಾಲಿತ ಸಿಂಕ್ ಅನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು</string>
-    <string name="policy_require_encryption">ಸಾಧನ ಎನ್‌ಕ್ರಿಪ್ಶನ್‌‌ ಅಗತ್ಯವಿದೆ</string>
+    <string name="policy_require_encryption">ಸಾಧನದ ಗುಪ್ತಲಿಪೀಕರಣ ಅಗತ್ಯವಿದೆ</string>
     <string name="account_setup_options_mail_window_auto">ಸ್ವಯಂಚಾಲಿತ</string>
     <string name="account_setup_options_mail_window_1day">ಒಂದು ದಿನ</string>
     <string name="account_setup_options_mail_window_3days">ಮೂರು ದಿನಗಳು</string>
@@ -60,5 +60,5 @@
     <string name="account_setup_options_mail_window_all">ಎಲ್ಲ</string>
     <string name="auth_error_notification_title">ದೃಢೀಕರಣ ದೋಷ</string>
     <string name="auth_error_notification_text"><xliff:g id="ACCOUNT">%s</xliff:g> ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‍ಗಳನ್ನು ಸಂಪಾದಿಸಲು ಸ್ಪರ್ಶಿಸಿ</string>
-    <string name="email_settings_not_available">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಇಮೇಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮರುಸಕ್ರಿಯಗೊಳಿಸಿ.</string>
+    <string name="email_settings_not_available">ಅಳವಡಿಕೆಗಳನ್ನು ವೀಕ್ಷಿಸಲು e-ಅಂಚೆ ಆಪನ್ನು ಮರುಸಶಕ್ತಿಸು.</string>
 </resources>
