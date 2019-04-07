@@ -16,20 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
-    <string name="meeting_accepted">ಸ್ವೀಕರಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_declined">ನಿರಾಕರಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_tentative">ಪ್ರಾಯೋಗಿಕ: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_canceled">ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_updated">ನವೀಕರಿಸಲಾದ: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_accepted">ಸ್ವೀಕರಿಸಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_declined">ನಿರಾಕರಿಸಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_tentative">ತಾತ್ಕಾಲಿಕ: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_canceled">ರದ್ದಿಸಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_updated">ನವೀಕೃತ: <xliff:g id="SUBJECT">%s</xliff:g></string>
     <string name="meeting_when">ಯಾವಾಗ: <xliff:g id="WHEN">%s</xliff:g></string>
     <string name="meeting_where">ಎಲ್ಲಿ: <xliff:g id="WHERE">%s</xliff:g></string>
-    <string name="meeting_recurring">ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ)</string>
-    <string name="meeting_allday">ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಎಲ್ಲಾ ದಿನಗಳು)</string>
-    <string name="meeting_allday_recurring">ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಎಲ್ಲಾ ದಿನ, ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ)</string>
+    <string name="meeting_recurring">ಯಾವಾಗ: <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g> (ಮರುಕಳಿಸುವ)</string>
+    <string name="meeting_allday">ಯಾವಾಗ: <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g> (ಇಡೀ ದಿನ)</string>
+    <string name="meeting_allday_recurring">ಯಾವಾಗ: <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g> (ಇಡೀ ದಿನ, ಮರುಕಳಿಸುವ)</string>
     <string name="app_name">ವಿನಿಮಯ ಸೇವೆಗಳು</string>
-    <string name="exception_cancel">ಈ ದಿನಾಂಕದಲ್ಲಿ ಈ ಈವೆಂಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: <xliff:g id="DATE">%s</xliff:g></string>
-    <string name="exception_updated">ಈ ಈವೆಂಟ್‍‍ನ ವಿವರಗಳನ್ನು ಈ ದಿನಾಂಕದಲ್ಲಿ ಬದಲಿಸಲಾಗಿದೆ:<xliff:g id="DATE">%s</xliff:g></string>
-    <string name="policy_dont_allow_storage_cards">ಮೆಮೊರಿ ಕಾರ್ಡ್ಗಳನ್ನು ನಿರಾಕರಿಸು</string>
+    <string name="exception_cancel">ಈ ಕಾರ್ಯಕ್ರಮವನ್ನು ರದ್ದಿಸಲಾಗಿದೆ: <xliff:g id="DATE">%s</xliff:g></string>
+    <string name="exception_updated">ಈ ಕಾರ್ಯಕ್ರಮದ ವಿವರ ಬದಲಾಗಿದೆ: <xliff:g id="DATE">%s</xliff:g></string>
+    <string name="policy_dont_allow_storage_cards">ಸಂಗ್ರಹಣೆ ಬಿಲ್ಲೆಗಳನ್ನು ನಿರಾಕರಿಸು</string>
     <string name="policy_dont_allow_unsigned_apps">ಸಹಿಮಾಡದ ಅಪ್ಗಳನ್ನು ನಿರಾಕರಿಸು</string>
     <string name="policy_dont_allow_unsigned_installers">ಸಹಿಮಾಡದ ಅಪ್ ಸ್ಥಾಪಕಗಳನ್ನು ನಿರಾಕರಿಸು</string>
     <string name="policy_dont_allow_wifi">Wi-Fi ನಿರಾಕರಿಸು</string>
@@ -43,7 +43,7 @@
     <string name="policy_require_smime">SMIME ಸಂದೇಶಗಳ ಅಗತ್ಯವಿದೆ</string>
     <string name="policy_bluetooth_restricted">ಬ್ಲೂಟೂತ್ ಬಳಕೆಯನ್ನು ನಿರ್ಬಂಧಿಸು</string>
     <string name="policy_app_blacklist">ನಿರ್ದಿಷ್ಟ ಅಪ್ಲಗಳನ್ನು ನಿರಾಕರಿಸು</string>
-    <string name="policy_app_whitelist">ನಿರ್ದಿಷ್ಟ ಪಡಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸಿ</string>
+    <string name="policy_app_whitelist">ಹೆಸರಿಸಿದ ಆಪ್ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು</string>
     <string name="policy_text_truncation">ಪಠ್ಯ e-ಅಂಚೆ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸು</string>
     <string name="policy_html_truncation">HTML ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸು</string>
     <string name="policy_require_sd_encryption">SD ಕಾರ್ಡ್ನ ಗುಪ್ತಲಿಪೀಕರಣ ಅಗತ್ಯವಿದೆ</string>
@@ -57,7 +57,7 @@
     <string name="account_setup_options_mail_window_1week">ಒಂದು ವಾರ</string>
     <string name="account_setup_options_mail_window_2weeks">ಎರಡು ವಾರಗಳು</string>
     <string name="account_setup_options_mail_window_1month">ಒಂದು ತಿಂಗಳು</string>
-    <string name="account_setup_options_mail_window_all">ಎಲ್ಲ</string>
+    <string name="account_setup_options_mail_window_all">ಎಲ್ಲಾ</string>
     <string name="auth_error_notification_title">ದೃಢೀಕರಣ ದೋಷ</string>
     <string name="auth_error_notification_text"><xliff:g id="ACCOUNT">%s</xliff:g> ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‍ಗಳನ್ನು ಸಂಪಾದಿಸಲು ಸ್ಪರ್ಶಿಸಿ</string>
     <string name="email_settings_not_available">ಅಳವಡಿಕೆಗಳನ್ನು ವೀಕ್ಷಿಸಲು e-ಅಂಚೆ ಆಪನ್ನು ಮರುಸಶಕ್ತಿಸು.</string>
