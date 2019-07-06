@@ -59,6 +59,6 @@
     <string name="account_setup_options_mail_window_1month">En måned</string>
     <string name="account_setup_options_mail_window_all">Alle</string>
     <string name="auth_error_notification_title">Godkendelsesfejl</string>
-    <string name="auth_error_notification_text">Tryk for at redigere kontoindstillingerne for <xliff:g id="ACCOUNT">%s</xliff:g></string>
+    <string name="auth_error_notification_text">Rør for at redigere kontoindstillingerne for <xliff:g id="account">%s</xliff:g></string>
     <string name="email_settings_not_available">Genaktiver applikationen Email for at se indstillingerne.</string>
 </resources>
