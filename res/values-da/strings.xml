@@ -17,7 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
     <string name="meeting_accepted">Accepteret: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_declined">Afvist: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_declined">        Afslået:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
     <string name="meeting_tentative">Foreløbig: <xliff:g id="SUBJECT">%s</xliff:g></string>
     <string name="meeting_canceled">Annulleret: <xliff:g id="SUBJECT">%s</xliff:g></string>
     <string name="meeting_updated">Opdateret: <xliff:g id="SUBJECT">%s</xliff:g></string>
