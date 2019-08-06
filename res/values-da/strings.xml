@@ -17,7 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
     <string name="meeting_accepted">Accepteret: <xliff:g id="SUBJECT">%s</xliff:g></string>
-    <string name="meeting_declined">Afvist: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_declined">        Afslået:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
     <string name="meeting_tentative">Foreløbig: <xliff:g id="SUBJECT">%s</xliff:g></string>
     <string name="meeting_canceled">Annulleret: <xliff:g id="SUBJECT">%s</xliff:g></string>
     <string name="meeting_updated">Opdateret: <xliff:g id="SUBJECT">%s</xliff:g></string>
@@ -59,6 +61,6 @@
     <string name="account_setup_options_mail_window_1month">En måned</string>
     <string name="account_setup_options_mail_window_all">Alle</string>
     <string name="auth_error_notification_title">Godkendelsesfejl</string>
-    <string name="auth_error_notification_text">Tryk for at redigere kontoindstillingerne for <xliff:g id="ACCOUNT">%s</xliff:g></string>
+    <string name="auth_error_notification_text">Rør for at redigere kontoindstillingerne for <xliff:g id="account">%s</xliff:g></string>
     <string name="email_settings_not_available">Genaktiver applikationen Email for at se indstillingerne.</string>
 </resources>
