@@ -67,7 +67,7 @@
     <string name="policy_dont_allow_html">Запрещать письма в формате HTML</string>
     <string name="policy_dont_allow_browser">Запрещать браузеры</string>
     <string name="policy_dont_allow_consumer_email">Запрещать пользовательскую почту</string>
-    <string name="policy_dont_allow_internet_sharing">Запрещать раздачу интернета</string>
+    <string name="policy_dont_allow_internet_sharing">Не использовать режим модема</string>
     <string name="policy_require_smime">Требовать письма в формате SMIME</string>
     <string name="policy_bluetooth_restricted">Ограничить использование Bluetooth</string>
     <string name="policy_app_blacklist">Запрещать указанные приложения</string>
