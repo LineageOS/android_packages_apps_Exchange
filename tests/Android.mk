@@ -32,6 +32,6 @@ LOCAL_PACKAGE_NAME := Exchange2Tests
 
 LOCAL_INSTRUMENTATION_FOR := Exchange2
 
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-test
+LOCAL_STATIC_ANDROID_LIBRARIES := androidx.test.rules
 
 include $(BUILD_PACKAGE)
