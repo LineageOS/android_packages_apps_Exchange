@@ -25,8 +25,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.SystemClock;
-import android.support.v4.util.LongSparseArray;
 import android.text.format.DateUtils;
+
+import androidx.collection.LongSparseArray;
 
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent;

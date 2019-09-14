@@ -20,9 +20,10 @@ import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
-import android.support.v4.util.LongSparseArray;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
+
+import androidx.collection.LongSparseArray;
 
 import com.android.emailcommon.provider.Account;
 import com.android.emailcommon.provider.EmailContent;

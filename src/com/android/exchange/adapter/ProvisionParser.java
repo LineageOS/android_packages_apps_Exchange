@@ -19,7 +19,8 @@ import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.content.ContextCompat;
 
 import com.android.emailcommon.provider.Policy;
 import com.android.emailcommon.service.PolicyServiceProxy;
