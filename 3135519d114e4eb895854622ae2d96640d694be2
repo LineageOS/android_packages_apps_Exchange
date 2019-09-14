@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f49ce5e_e47af719",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-14T20:11:46Z",
+      "side": 1,
+      "message": "Leftover?",
+      "revId": "3135519d114e4eb895854622ae2d96640d694be2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
