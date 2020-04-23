@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">Akseptearre: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_declined">Ofwezen: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_tentative">Foarlopich: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_canceled">Annulearre: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_updated">Bywurke: <xliff:g id="SUBJECT">%s</xliff:g></string>
+    <string name="meeting_when">Wannear: <xliff:g id="WHEN">%s</xliff:g></string>
+    <string name="meeting_where">Wêr: <xliff:g id="WHERE">%s</xliff:g></string>
+    <string name="meeting_recurring">Wannear: <xliff:g id="EVENTDATE">%s</xliff:g> (werheljend)</string>
+    <string name="meeting_allday">Wannear: <xliff:g id="EVENTDATE">%s</xliff:g> (hiele dei)</string>
+    <string name="meeting_allday_recurring">Wannear: <xliff:g id="EVENTDATE">%s</xliff:g> (hiele dei, werhelje)</string>
+    <string name="app_name">Exchange Services</string>
+    <string name="exception_cancel">Dizze ôfspraak is annulearre foar: <xliff:g id="DATE">%s</xliff:g></string>
+    <string name="exception_updated">De details fan dizze ôfspraak binne wizige foar: &lt;/xliff:g&gt;xliff:g id=\"DATE\"&gt;%s&lt;/xliff:g&gt;</string>
+    <string name="policy_dont_allow_storage_cards">Unthâldkaarten net tastean</string>
+    <string name="policy_dont_allow_unsigned_apps">Net-ûndertekene apps net tastean</string>
+    <string name="policy_dont_allow_unsigned_installers">Net-ûndertekene appynstallers wegerje</string>
+    <string name="policy_dont_allow_wifi">Wifi net tastean</string>
+    <string name="policy_dont_allow_text_messaging">Sms\'en net tastean</string>
+    <string name="policy_dont_allow_pop_imap">POP3- of IMAP-accounts net tastean</string>
+    <string name="policy_dont_allow_irda">Ynfrareadkommunikaasje net tastean</string>
+    <string name="policy_dont_allow_html">HTML-e-mail net tastean</string>
+    <string name="policy_dont_allow_browser">Browsers net tastean</string>
+    <string name="policy_dont_allow_consumer_email">Konsuminten-e-mail net tastean</string>
+    <string name="policy_dont_allow_internet_sharing">Ynternet diele net tastean</string>
+    <string name="policy_require_smime">SMIME-berjochten fereaskje</string>
+    <string name="policy_bluetooth_restricted">It gebrûk fan Bluetooth beheine</string>
+    <string name="policy_app_blacklist">Opjûne apps net tastean</string>
+    <string name="policy_app_whitelist">Allinnich opjûne apps tastean</string>
+    <string name="policy_text_truncation">Tekstgrutte fan e-mail beheine</string>
+    <string name="policy_html_truncation">Grutte fan HTML-e-mailberjochten beheine</string>
+    <string name="policy_require_sd_encryption">Fersifering fan SD-kaart fereaskje</string>
+    <string name="policy_dont_allow_attachments">Bylagen net tastean</string>
+    <string name="policy_max_attachment_size">Grutte fan bylagen beheine</string>
+    <string name="policy_require_manual_sync_roaming">Allinnich hânmj. syngr. tastean by roaming</string>
+    <string name="policy_require_encryption">Apparaatfersifering fereaskje</string>
+    <string name="account_setup_options_mail_window_auto">Automatysk</string>
+    <string name="account_setup_options_mail_window_1day">Ien dei</string>
+    <string name="account_setup_options_mail_window_3days">Trije dagen</string>
+    <string name="account_setup_options_mail_window_1week">Ien wike</string>
+    <string name="account_setup_options_mail_window_2weeks">Twa wiken</string>
+    <string name="account_setup_options_mail_window_1month">Ien moanne</string>
+    <string name="account_setup_options_mail_window_all">Alles</string>
+    <string name="auth_error_notification_title">Autentikaasjeflater</string>
+    <string name="auth_error_notification_text">Reitsje oan om accountynstellingen foar <xliff:g id="ACCOUNT">%s</xliff:g> te bewurkjen</string>
+    <string name="email_settings_not_available">Skeakelje de app E-mail wer yn om ynstellingen te besjen.</string>
+</resources>
