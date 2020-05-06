@@ -46,7 +46,18 @@ LOCAL_SDK_VERSION := 19
 
 LOCAL_JACK_COVERAGE_INCLUDE_FILTER += com.android.exchange.*
 
+LOCAL_REQUIRED_MODULES += default_permissions_com.android.exchange.xml
+
 include $(BUILD_PACKAGE)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := default_permissions_com.android.exchange.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/default-permissions
+LOCAL_PRODUCT_MODULE := true
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
 
 # additionally, build unit tests in a separate .apk
 include $(call all-makefiles-under,$(LOCAL_PATH))
