@@ -30,7 +30,6 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_FLAGS += --extra-packages com.android.emailcommon
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_SRC_FILES += $(call all-java-files-under, build/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := androidx.core_core
 LOCAL_STATIC_JAVA_LIBRARIES := android-common com.android.emailcommon
