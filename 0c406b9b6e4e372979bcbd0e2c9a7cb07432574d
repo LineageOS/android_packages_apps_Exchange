@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3acdfd31_57008093",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-03-27T14:09:41Z",
+      "side": 1,
+      "message": "pre, not per",
+      "range": {
+        "startLine": 7,
+        "startChar": 73,
+        "endLine": 7,
+        "endChar": 81
+      },
+      "revId": "0c406b9b6e4e372979bcbd0e2c9a7cb07432574d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c5c92b89_46d6c30f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-03-27T14:09:41Z",
+      "side": 1,
+      "message": "Commit message format:\n\nTitle (\u003c80 chars)\nempty line\nadditional text, manually broken so each line is \u003c80 chars\nempty line\nChange-Id",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 93
+      },
+      "revId": "0c406b9b6e4e372979bcbd0e2c9a7cb07432574d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "250986e5_f6de2861",
+        "filename": "src/com/android/exchange/adapter/CalendarSyncParser.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-03-27T14:09:41Z",
+      "side": 1,
+      "message": "why not define INVALID_START_TIME \u003d Long.MIN_VALUE;\nand use if (startTime \u003d\u003d INVALID_START_TIME) here?\nThat way you don\u0027t have to add or substract 1 anywhere",
+      "revId": "0c406b9b6e4e372979bcbd0e2c9a7cb07432574d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
