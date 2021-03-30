@@ -102,8 +102,8 @@ public class CalendarSyncParser extends AbstractSyncParser {
     // TODO Find a better solution to this workaround
     private static final int MAX_OPS_BEFORE_EXCEPTION_ATTENDEE_REDACTION = 500;
 
-    // Minimum acceptable start time for recuring events
-    private static final long MIN_START_TIME = Long.MIN_VALUE+1;
+    // Any start time higher than INVALID_START_TIME is acceptable for recuring events
+    private static final long INVALID_START_TIME = Long.MIN_VALUE;
 
     public CalendarSyncParser(final Context context, final ContentResolver resolver,
             final InputStream in, final Mailbox mailbox, final Account account,
@@ -290,7 +290,7 @@ public class CalendarSyncParser extends AbstractSyncParser {
     /*package*/ void setTimeRelatedValues(ContentValues cv, long startTime, long endTime,
             int allDayEvent) {
         // If there's no startTime, the event will be found to be invalid, so return
-        if (startTime < MIN_START_TIME) return;
+        if (startTime == INVALID_START_TIME) return;
         // EAS events can arrive without an end time, but CalendarProvider requires them
         // so we'll default to 30 minutes; this will be superceded if this is an all-day event
         if (endTime < 0) endTime = startTime + (30 * DateUtils.MINUTE_IN_MILLIS);
@@ -357,7 +357,7 @@ public class CalendarSyncParser extends AbstractSyncParser {
 
         boolean firstTag = true;
         long eventId = -1;
-        long startTime = MIN_START_TIME-1; // To be able to accept also start times before Epoch
+        long startTime = INVALID_START_TIME; // To be able to accept also start times before Epoch
         long endTime = -1;
         TimeZone timeZone = null;
 
