@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">        Atzetadu:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Atzetadu:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_tentative">        Tentativu:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Annulladu:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Agiornadu:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Cando:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        In ue:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Cando:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
+        (periòdicu)
+    </string>
+    <string name="meeting_allday">        Cando:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (totu sa die)
+    </string>
+    <string name="meeting_allday_recurring">        Cando:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (totu sa die, periòdicu)
+    </string>
+    <string name="app_name">Servìtzios de cuncàmbiu</string>
+    <string name="exception_cancel">        Custu eventu est istadu cantzelladu
+        pro:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="exception_updated">        Sos detàllios de custu eventu sunt istados modificados
+        pro:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="policy_dont_allow_storage_cards">Non permitas ischedas de memòria</string>
+    <string name="policy_dont_allow_unsigned_apps">Non pemitas aplicatziones chena firmas</string>
+    <string name="policy_dont_allow_unsigned_installers">Non permitas installadores de aplicatziones 
+        chena firma</string>
+    <string name="policy_dont_allow_wifi">Non permitas su Wi-Fi</string>
+    <string name="policy_dont_allow_text_messaging">Non permitas messàgios de testu</string>
+    <string name="policy_dont_allow_pop_imap">Non permitas POP3 o contos IMAP</string>
+    <string name="policy_dont_allow_irda">Non permitas comunicatziones cun infrarujos</string>
+    <string name="policy_dont_allow_html">Non permitas messàgios de posta HTML</string>
+    <string name="policy_dont_allow_browser">Non permitas navigadores</string>
+    <string name="policy_dont_allow_consumer_email">Non permitas messàgios cummertziales</string>
+    <string name="policy_dont_allow_internet_sharing">Non permitas sa cumpartzidura de ìnternet</string>
+    <string name="policy_require_smime">Rechede messàgios SMIME</string>
+    <string name="policy_bluetooth_restricted">Impreu Bluetooth limitadu</string>
+    <string name="policy_app_blacklist">Disativa petzi aplicatziones pretzisas</string>
+    <string name="policy_app_whitelist">Permite petzi aplicatziones pretzisas</string>
+    <string name="policy_text_truncation">Mìnima sa mannària de su testu de su messàgiu</string>
+    <string name="policy_html_truncation">Lìmita sa mannària de is messàgios de posta HTML</string>
+    <string name="policy_require_sd_encryption">Rechede ischeda SD tzifrada</string>
+    <string name="policy_dont_allow_attachments">Non permitas alligongiados</string>
+    <string name="policy_max_attachment_size">Redue mannària alligongiados </string>
+    <string name="policy_require_manual_sync_roaming">Permite petzi sincronizatzione manuale cun àteros gestores</string>
+    <string name="policy_require_encryption">Rechede tzifradura dispositivu</string>
+    <string name="account_setup_options_mail_window_auto">Automàticu</string>
+    <string name="account_setup_options_mail_window_1day">Una die</string>
+    <string name="account_setup_options_mail_window_3days">Tres dies</string>
+    <string name="account_setup_options_mail_window_1week">Una chida</string>
+    <string name="account_setup_options_mail_window_2weeks">Duas chidas</string>
+    <string name="account_setup_options_mail_window_1month">Unu mese</string>
+    <string name="account_setup_options_mail_window_all">Totu</string>
+    <string name="auth_error_notification_title">Errore de autenticatzione</string>
+    <string name="auth_error_notification_text">Toca pro modificare impostatziones contu pro <xliff:g id="account">%s</xliff:g></string>
+    <string name="email_settings_not_available">Torra a abilitare s\'aplicatzione de posta pro visualizare impostatziones.</string>
+</resources>
