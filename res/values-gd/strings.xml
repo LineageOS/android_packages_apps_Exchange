@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">        Air a ghabhail ris:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Air a dhiùltadh:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_tentative">        Gun chinnt:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Air a chur dheth:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Air ùrachadh:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Cuin:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Càite:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Cuin:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
+        (ath-chùrsach)
+    </string>
+    <string name="meeting_allday">        Cuin:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (fad an latha)
+    </string>
+    <string name="meeting_allday_recurring">        Cuin:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (fad an latha, ath-chùrsach)
+    </string>
+    <string name="app_name">Seirbheisean Exchange</string>
+    <string name="exception_cancel">        Chaidh an tachartas seo a chur dheth
+        airson:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="exception_updated">        Chaidh fiosrachadh an tachartais seo atharrachadh
+        airson:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="policy_dont_allow_storage_cards">Na ceadaich cairtean stòrais</string>
+    <string name="policy_dont_allow_unsigned_apps">Na ceadaich aplacaidean gun soidhneadh</string>
+    <string name="policy_dont_allow_unsigned_installers">Na ceadaich innealan-stàlaidh aplacaidean
+        gun soidhneadh</string>
+    <string name="policy_dont_allow_wifi">Na ceadaich WiFi</string>
+    <string name="policy_dont_allow_text_messaging">Na ceadaich teachdaireachdan teacsa</string>
+    <string name="policy_dont_allow_pop_imap">Na ceadaich cunntasan POP3 no IMAP</string>
+    <string name="policy_dont_allow_irda">Na ceadaich conaltradh fo-dhearg</string>
+    <string name="policy_dont_allow_html">Na ceadaich puist-d HTML</string>
+    <string name="policy_dont_allow_browser">Na ceadaich brabhsairean</string>
+    <string name="policy_dont_allow_consumer_email">Na ceadaich puist-d luchd-caitheimh</string>
+    <string name="policy_dont_allow_internet_sharing">Na ceadaich co-roinneadh eadar-lìn</string>
+    <string name="policy_require_smime">Iarr teachdaireachdan SMIME</string>
+    <string name="policy_bluetooth_restricted">Cuingich cleachdadh Bluetooth</string>
+    <string name="policy_app_blacklist">Diùilt aplacaidean sònraichte</string>
+    <string name="policy_app_whitelist">Na ceadaich ach aplacaidean sònraichte</string>
+    <string name="policy_text_truncation">Cuingich meud nam post-d teacsa</string>
+    <string name="policy_html_truncation">Cuingich meud nam post-d HTML</string>
+    <string name="policy_require_sd_encryption">Iarr crioptachadh cairt SD</string>
+    <string name="policy_dont_allow_attachments">Na ceadaich ceanglachain</string>
+    <string name="policy_max_attachment_size">Cuingich meud nan ceanglachan</string>
+    <string name="policy_require_manual_sync_roaming">Na ceadaich ach sioncronachadh air làmh nuair a bhios tu air fàrsan</string>
+    <string name="policy_require_encryption">Iarr crioptachadh an uidheim</string>
+    <string name="account_setup_options_mail_window_auto">Fèin-obrachail</string>
+    <string name="account_setup_options_mail_window_1day">Aon latha</string>
+    <string name="account_setup_options_mail_window_3days">Trì làithean</string>
+    <string name="account_setup_options_mail_window_1week">Seachdain</string>
+    <string name="account_setup_options_mail_window_2weeks">2 sheachdain</string>
+    <string name="account_setup_options_mail_window_1month">Mìos</string>
+    <string name="account_setup_options_mail_window_all">Na h-uile</string>
+    <string name="auth_error_notification_title">Mearachd leis an dearbhadh</string>
+    <string name="auth_error_notification_text">Suath ris a dh’atharrachadh roghainnean a’ chunntais airson <xliff:g id="account">%s</xliff:g></string>
+    <string name="email_settings_not_available">Cuir aplacaid a’ phuist-d an comas a-rithist airson na roghainnean a shealltainn.</string>
+</resources>
