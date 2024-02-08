@@ -31,7 +31,7 @@
     <string name="policy_dont_allow_storage_cards">Tillåt inte minneskort</string>
     <string name="policy_dont_allow_unsigned_apps">Tillåt inte osignerade appar</string>
     <string name="policy_dont_allow_unsigned_installers">Tillåt inte installationsprogram för osignerade appar</string>
-    <string name="policy_dont_allow_wifi">Tillåt inte Wi-Fi</string>
+    <string name="policy_dont_allow_wifi">Tillåt inte Wi\u2011Fi</string>
     <string name="policy_dont_allow_text_messaging">Tillåt inte SMS</string>
     <string name="policy_dont_allow_pop_imap">Tillåt inte POP3- eller IMAP-konton</string>
     <string name="policy_dont_allow_irda">Tillåt inte infraröd kommunikation</string>

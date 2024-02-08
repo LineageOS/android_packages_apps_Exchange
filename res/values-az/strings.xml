@@ -27,7 +27,7 @@
     <string name="meeting_canceled">        İmtina edildi:
         <xliff:g id="subject">%s</xliff:g>
     </string>
-    <string name="meeting_updated">        Yeniləndi:
+    <string name="meeting_updated">        Güncəlləndi:
         <xliff:g id="subject">%s</xliff:g>
     </string>
     <string name="meeting_when">        Vaxt:
@@ -53,7 +53,7 @@
         imtina edildi:
         <xliff:g id="date">%s</xliff:g>
     </string>
-    <string name="exception_updated">        Bu tədbirin təfsilatları
+    <string name="exception_updated">        Bu tədbirin detalları
         dəyişdirildi:
         <xliff:g id="date">%s</xliff:g>
     </string>
@@ -66,7 +66,7 @@
     <string name="policy_dont_allow_pop_imap">POP3 və IMAP hesablarına icazə vermə</string>
     <string name="policy_dont_allow_irda">İnfraqırmızı əlaqələrinə icazə vermə</string>
     <string name="policy_dont_allow_html">HTML e-poçtlarına icazə vermə</string>
-    <string name="policy_dont_allow_browser">Səyyahlara icazə vermə</string>
+    <string name="policy_dont_allow_browser">Brauzerlərə icazə vermə</string>
     <string name="policy_dont_allow_consumer_email">İstehlakçı e-poçtlarına icazə vermə</string>
     <string name="policy_dont_allow_internet_sharing">İnternet paylaşımına icazə vermə</string>
     <string name="policy_require_smime">SMIME mesajları tələb et</string>
@@ -87,7 +87,7 @@
     <string name="account_setup_options_mail_window_2weeks">İki həftə</string>
     <string name="account_setup_options_mail_window_1month">Bir ay</string>
     <string name="account_setup_options_mail_window_all">Hamısı</string>
-    <string name="auth_error_notification_title">Kimlik təsdiqləmə xətası</string>
-    <string name="auth_error_notification_text"><xliff:g id="account">%s</xliff:g> ilə əlaqəli hesab tənzimləmələrinə düzəliş etmək üçün toxunun</string>
-    <string name="email_settings_not_available">Tənzimləmələrə baxmaq üçün E-poçt tətbiqetməsini yenidən fəallaşdırın.</string>
+    <string name="auth_error_notification_title">Kimlik doğrulama xətası</string>
+    <string name="auth_error_notification_text"><xliff:g id="account">%s</xliff:g> ilə əlaqəli hesab ayarlarına düzəliş etmək üçün toxunun</string>
+    <string name="email_settings_not_available">Ayarlara baxmaq üçün E-poçt tətbiqini yenidən fəallaşdırın.</string>
 </resources>

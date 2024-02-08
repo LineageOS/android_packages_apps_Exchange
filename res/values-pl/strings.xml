@@ -58,6 +58,6 @@
     <string name="account_setup_options_mail_window_1month">Jeden miesiąc</string>
     <string name="account_setup_options_mail_window_all">Wszystkie</string>
     <string name="auth_error_notification_title">Błąd uwierzytelniania</string>
-    <string name="auth_error_notification_text">Kliknij, by edytować ustawienia konta <xliff:g id="ACCOUNT">%s</xliff:g></string>
+    <string name="auth_error_notification_text">Dotknij, aby edytować ustawienia konta <xliff:g id="account">%s</xliff:g></string>
     <string name="email_settings_not_available">Włącz ponownie aplikację Poczta, by wyświetlić ustawienia.</string>
 </resources>

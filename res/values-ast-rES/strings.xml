@@ -14,7 +14,31 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="meeting_accepted">        Aceptóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Refugóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Anovóse:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Cuándo:
+        <xliff:g id="when">%s</xliff:g>
+        </string>
+    <string name="meeting_where">        Ónde:
+        <xliff:g id="where">%s</xliff:g>
+        </string>
+    <string name="meeting_allday">        Cuándo:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (tol día)
+        </string>
+    <string name="app_name">Servicios d\'Exchange</string>
     <string name="account_setup_options_mail_window_1day">Un día</string>
+    <string name="account_setup_options_mail_window_3days">Trés díes</string>
     <string name="account_setup_options_mail_window_1week">Una selmana</string>
+    <string name="account_setup_options_mail_window_2weeks">Dos selmanes</string>
     <string name="account_setup_options_mail_window_1month">Un mes</string>
+    <string name="auth_error_notification_text">Toca equí pa editar la configuración de: <xliff:g id="account">%s</xliff:g></string>
+    <string name="email_settings_not_available">Volvi activar l\'aplicación «Corréu» pa ver la configuración.</string>
 </resources>

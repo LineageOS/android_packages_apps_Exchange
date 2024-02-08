@@ -30,19 +30,20 @@
     <string name="exception_updated">ამ ღონისძიების მონაცემები შეცვლილია: <xliff:g id="DATE">%s</xliff:g></string>
     <string name="policy_dont_allow_storage_cards">აიკრძალოს მეხსიერების ბარათები</string>
     <string name="policy_dont_allow_unsigned_apps">აიკრძალოს ხელმოუწერელი აპები</string>
-    <string name="policy_dont_allow_unsigned_installers">აიკრძალოს აპების ხელმოუწერელი ინსტალატორები</string>
-    <string name="policy_dont_allow_wifi">არ გამოიყენო Wi-Fi</string>
+    <string name="policy_dont_allow_unsigned_installers">აიკრძალოს ხელმოუწერელი აპის
+        გამშვებები</string>
+    <string name="policy_dont_allow_wifi">აიკრძალოს WiFi</string>
     <string name="policy_dont_allow_text_messaging">აიკრძალოს ტექსტური შეტყობინებები</string>
     <string name="policy_dont_allow_pop_imap">აიკრძალოს POP3 ან IMAP ანგარიშები</string>
     <string name="policy_dont_allow_irda">აიკრძალოს ინფრაწითელი პორტის გამოყენება</string>
-    <string name="policy_dont_allow_html">აიკრძალოს HTML ელფოსტა</string>
+    <string name="policy_dont_allow_html">აიკრძალოს HTML-ელფოსტა</string>
     <string name="policy_dont_allow_browser">აიკრძალოს ბრაუზერები</string>
     <string name="policy_dont_allow_consumer_email">აიკრძალოს მომხმარებლების ელფოსტა</string>
-    <string name="policy_dont_allow_internet_sharing">აიკრძალოს ინტერნეტთან წვდომის გაზიარება</string>
+    <string name="policy_dont_allow_internet_sharing">აიკრძალოს ინტერნეტის გაზიარება</string>
     <string name="policy_require_smime">მოითხოვე SMIME შეტყობინებები</string>
     <string name="policy_bluetooth_restricted">შეიზღუდოს bluetooth-ის გამოყენება</string>
-    <string name="policy_app_blacklist">აიკრძალოს განსაზღვრული აპები</string>
-    <string name="policy_app_whitelist">მხოლოდ განსაზღვრული აპლიკაციების დაშვება</string>
+    <string name="policy_app_blacklist">აიკრძალოს ცალკეული აპები</string>
+    <string name="policy_app_whitelist">ნებადართულია მხოლოდ ცალკეული აპები</string>
     <string name="policy_text_truncation">ტექსტური შეტყობინებების ზომის შეზღუდვა</string>
     <string name="policy_html_truncation">HTML ელფოსტის ზომის შეზღუდვა</string>
     <string name="policy_require_sd_encryption">აუცილებელია SD ბარათის დაშიფვრა</string>

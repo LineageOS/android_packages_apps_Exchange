@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">        Прынята:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Адхілена:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_tentative">        Пад пытаннем:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Скасавана:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Абноўлена:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Калі:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Дзе:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Калі:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
+        (перыядычная)
+    </string>
+    <string name="meeting_allday">        Калі:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (увесь дзень)
+    </string>
+    <string name="app_name">Службы Exchange</string>
+    <string name="policy_dont_allow_storage_cards">Не дазваляць карткі памяці</string>
+    <string name="policy_dont_allow_unsigned_apps">Не дазваляць непадпісаныя праграмы</string>
+    <string name="policy_dont_allow_unsigned_installers">Не дазваляць усталёўваць непадпісаныя
+        праграмы</string>
+    <string name="policy_dont_allow_wifi">Не дазваляць злучэнні па Wi-Fi</string>
+    <string name="policy_dont_allow_text_messaging">Не дазваляць тэкставыя паведамленні</string>
+    <string name="policy_dont_allow_pop_imap">Не дазваляць уліковыя запісы з пратаколамі POP3 або IMAP</string>
+    <string name="policy_dont_allow_consumer_email">Не дазваляць маркетынгавыя лісты</string>
+    <string name="policy_require_smime">Патрабаваць паведамленні ў фармаце SMIME</string>
+    <string name="policy_bluetooth_restricted">Абмежаваць выкарыстанне Bluetooth</string>
+    <string name="policy_app_whitelist">Дазваляць толькі азначаныя праграмы</string>
+    <string name="policy_text_truncation">Абмежаваць памер тэкставых лістоў</string>
+    <string name="policy_html_truncation">Абмежаваць памер лістоў у фармаце HTML</string>
+    <string name="policy_require_sd_encryption">Патрабаваць шыфраванне SD-карткі</string>
+    <string name="policy_dont_allow_attachments">Не дазваляць далучэнні</string>
+    <string name="policy_max_attachment_size">Абмежаваць памер далучэння</string>
+    <string name="policy_require_manual_sync_roaming">Забараняць аўтаматычную сінхранізацыю ў роўмінгу</string>
+    <string name="policy_require_encryption">Патрабаваць шыфраванне прылады</string>
+    <string name="account_setup_options_mail_window_auto">Аўтаматычна</string>
+    <string name="account_setup_options_mail_window_1day">Штодзень</string>
+    <string name="account_setup_options_mail_window_3days">Тры дні</string>
+    <string name="account_setup_options_mail_window_1month">Адзін месяц</string>
+    <string name="account_setup_options_mail_window_all">Усе</string>
+    <string name="auth_error_notification_text">Дакраніцеся, каб змяніць налады ўліковага запісу для <xliff:g id="account">%s</xliff:g></string>
+</resources>

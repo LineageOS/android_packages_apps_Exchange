@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">         Yettwaqbel:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Yettwagi:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Yettwasefsex:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Yettwaleqqem:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Melmi:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Anida:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Melmi:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
+        (yettɛawad)
+    </string>
+    <string name="meeting_allday">        Melmi:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (ass ikmel)
+    </string>
+    <string name="meeting_allday_recurring">        Melmi:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (ass ikmel, yettɛawad)
+    </string>
+    <string name="app_name">Imeẓliyen  Exchange</string>
+    <string name="exception_cancel">        Tadyant-a tettwasefsex
+        i:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="exception_updated">        Ifatusen n tedyant-a beddlen
+        i:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="policy_dont_allow_storage_cards">Ur sirig ara tikarḍiwin n uklas</string>
+    <string name="policy_dont_allow_unsigned_apps">Ur sirig ara isnasen ur nettwazmel ara</string>
+    <string name="policy_dont_allow_unsigned_installers">Ur sirig ara imsebdaden n yisnasen ur nettwazmel ara</string>
+    <string name="policy_dont_allow_wifi">Ur sirig ara Wi-Fi</string>
+    <string name="policy_dont_allow_text_messaging">Ur sirig ara iznan n uḍris</string>
+    <string name="policy_dont_allow_pop_imap">Ur sirig ara imiḍanen POP3 neɣ IMAP</string>
+    <string name="policy_dont_allow_html">Ur sirig ara imayl HTML</string>
+    <string name="policy_dont_allow_browser">Ur sirig ara iminigen</string>
+    <string name="policy_dont_allow_internet_sharing">Ur sirig ara beṭṭu n tuqqna internet</string>
+    <string name="policy_require_smime">Yessutur iznan s umasal SMIME</string>
+    <string name="policy_bluetooth_restricted">Gdel aseqdec Bluetooth</string>
+    <string name="policy_dont_allow_attachments">Ur sirig ara imeddayen</string>
+    <string name="account_setup_options_mail_window_auto">Awurman</string>
+    <string name="account_setup_options_mail_window_1day">Yiwen n wass</string>
+    <string name="account_setup_options_mail_window_3days">Kraḍ n wussan</string>
+    <string name="account_setup_options_mail_window_1week">Yiwen n yimalas</string>
+    <string name="account_setup_options_mail_window_2weeks">Sin n yimalasen</string>
+    <string name="account_setup_options_mail_window_1month">Yiwen n wayyur</string>
+    <string name="account_setup_options_mail_window_all">Akkw</string>
+    <string name="auth_error_notification_title">Tuccḍa deg usesteb</string>
+    <string name="auth_error_notification_text">Nnal akken ad tẓergeḍ iɣewwaren n umiḍan i <xliff:g id="account">%s</xliff:g></string>
+    <string name="email_settings_not_available">Ales armad n usnas n yimayl i uskan n yiɣewwaren.</string>
+</resources>

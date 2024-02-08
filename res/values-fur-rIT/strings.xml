@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">        Riunion acetade:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Riunion declinade:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_tentative">        Progjet di riunion:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Riunion anulade:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Inzornament:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Cuant:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Dulà:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Cuant:
+        <xliff:g id="EVENTDATE">%s</xliff:g>
+        (ricorint)
+    </string>
+    <string name="meeting_allday">        Cuant:
+        <xliff:g id="EVENTDATE">%s</xliff:g>
+        (dut il dì)
+    </string>
+    <string name="meeting_allday_recurring">        Cuant:
+        <xliff:g id="EVENTDATE">%s</xliff:g>
+        (dut il dì, ricorint)
+    </string>
+    <string name="app_name">Servizis Exchange</string>
+    <string name="exception_cancel">        Chest event al è stât anulât
+        pe date:
+        <xliff:g id="DATE">%s</xliff:g>
+    </string>
+    <string name="exception_updated">        I detais di chest event a son stâts cambiâts
+        pe date:
+        <xliff:g id="DATE">%s</xliff:g>
+    </string>
+    <string name="policy_dont_allow_storage_cards">No sta permeti lis schedis di memorie</string>
+    <string name="policy_dont_allow_unsigned_apps">No sta permeti lis aplicazions cence firme</string>
+    <string name="policy_dont_allow_unsigned_installers">No sta permeti lis aplicazions cence firme
+        instaladôrs</string>
+    <string name="policy_dont_allow_wifi">No sta permeti il Wi-Fi</string>
+    <string name="policy_dont_allow_text_messaging">No sta permeti i messaçs di test</string>
+    <string name="policy_dont_allow_pop_imap">No sta permeti i accounts POP3 o IMAP</string>
+    <string name="policy_dont_allow_irda">No sta permeti lis comunicazions a infraròs</string>
+    <string name="policy_dont_allow_html">No sta permeti lis e-mails HTML</string>
+    <string name="policy_dont_allow_browser">No sta permeti i navigadôrs</string>
+    <string name="policy_dont_allow_consumer_email">No sta permeti lis e-mails comerciâls</string>
+    <string name="policy_dont_allow_internet_sharing">No sta permeti la condivision internet</string>
+    <string name="policy_require_smime">Pretint i messaçs SMIME</string>
+    <string name="policy_bluetooth_restricted">Limite la utilizazion dal Bluetooth</string>
+    <string name="policy_app_blacklist">No sta permeti lis aplicazions specificadis</string>
+    <string name="policy_app_whitelist">Permet dome lis aplicazions specificadis</string>
+    <string name="policy_text_truncation">Limite la dimension dal test des e-mails</string>
+    <string name="policy_html_truncation">Limite la dimension de e-mail HTML</string>
+    <string name="policy_require_sd_encryption">Pretint la cifradure de schede SD</string>
+    <string name="policy_dont_allow_attachments">No sta permeti lis zontis</string>
+    <string name="policy_max_attachment_size">Limite la dimension des zontis</string>
+    <string name="policy_require_manual_sync_roaming">Permet dome la sincron. manuâl in roaming</string>
+    <string name="policy_require_encryption">Pretint la cifradure dal dispositîf</string>
+    <string name="account_setup_options_mail_window_auto">Automatic</string>
+    <string name="account_setup_options_mail_window_1day">Un dì</string>
+    <string name="account_setup_options_mail_window_3days">Trê dîs</string>
+    <string name="account_setup_options_mail_window_1week">Une setemane</string>
+    <string name="account_setup_options_mail_window_2weeks">Dôs setemanis</string>
+    <string name="account_setup_options_mail_window_1month">Un mês</string>
+    <string name="account_setup_options_mail_window_all">Dut</string>
+    <string name="auth_error_notification_title">Erôr di autenticazion</string>
+    <string name="auth_error_notification_text">Tocje par modificâ lis impostazions dal account <xliff:g id="ACCOUNT">%s</xliff:g></string>
+    <string name="email_settings_not_available">Torne ative la aplicazion Email par visualizâ lis impostazions.</string>
+</resources>
